@@ -4,7 +4,7 @@ agp = "9.4.1"
 compose-bom = "2026.02.01"
 activity-compose = "1.12.4"
 junit = "4.13.2"
-playground-component = "1.0"
+playground-component = "1.1"
 playground-baseline = "1.0"
 
 [libraries]

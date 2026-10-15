@@ -15,6 +15,7 @@ fun ContractButton1(
         onClick = onClick,
         modifier = modifier,
         shape = contract.shape(),
+        border = contract.borderStroke(),
     ) {
         Text("Contract 1")
     }
