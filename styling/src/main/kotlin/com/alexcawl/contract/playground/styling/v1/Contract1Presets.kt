@@ -1,7 +1,5 @@
 package com.alexcawl.contract.playground.styling.v1
 
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.unit.dp
@@ -13,7 +11,6 @@ object Contract1Presets {
         get() = remember {
             Contract1(
                 cornerSize = { 12.dp },
-                borderStroke = { BorderStroke(1.dp, MaterialTheme.colorScheme.outline) },
             )
         }
 }

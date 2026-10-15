@@ -1,79 +1,59 @@
 # Contract Plugin Playground
 
-A minimal Android Compose app that uses contracts across three Android modules:
+An Android binary-compatibility sandbox with three modules: `component`, `styling`, and `app`.
+Both library dependencies in `app`, and the Component dependency in `styling`, resolve from
+**Maven Local**, never from `project(...)` dependencies.
 
-- `component`: `Contract1`, `Contract2`, and independent `ContractButton1`/`ContractButton2` composables.
-- `styling`: depends on `component` through `api` and provides composable `Contract1Presets.default` and `Contract2Presets.default` getters.
-- `app`: depends directly on both libraries and displays the two buttons in one Activity. Click handlers are empty.
+## Two release branches
 
-Both contracts expose `cornerSize()`, `shape()`, and `borderStroke()`. The interface defaults
-derive a rounded shape from `cornerSize()` and return no border. Both presets provide 12 dp
-corners and a 1 dp border in the current Material3 theme's `outline` color.
+- `codex/contract-1.0`: Component 1.0 has `cornerSize()` and default `shape()`.
+- `codex/contract-1.1`: Component 1.1 adds default `borderStroke()` and preserves old ABI entry points.
+- Styling stays at **1.0**, compiled once against Component **1.0**. Its source and published AAR
+  must not change during the upgrade. App's direct Component dependency selects the newer version.
 
-## Contract implementations
+Coordinates: `com.alexcawl.contract.playground:component:1.0` / `1.1` and
+`com.alexcawl.contract.playground:styling:1.0`.
 
-`Contract1` follows Benchmark V1: composable receiver callbacks, an inline anonymous-object
-factory, and reflective equality/hashing. Its `copy` creates a wrapper that delegates omitted
-overrides to the source through `wrapped`. Its composable `rememberCopy` uses `remember` without
-keys, matching Benchmark: it retains the first copy at that composition location even if the
-source contract changes.
+The two additional functions, `withJvmOverloads` and `withIntroducedAt`, have a required parameter
+and an optional parameter in 1.0. In 1.1 each gets another optional parameter. Frozen Styling
+contains calls with all old arguments and calls that omit the old optional argument.
 
-`Contract2` follows Benchmark V2 and is implemented manually. It stores ordinary receiver
-callbacks, compares the callbacks in `equals`/`hashCode`, and exposes them through a fresh
-`Contract2.Contract` snapshot. Its `copy` preserves omitted callbacks and invokes them with
-the new instance as receiver. Equality never evaluates callback results.
+## Record the experiment
 
-The real Contract Plugin, annotations, and benchmark modules are not dependencies of this project.
+Use the existing Android SDK configuration and Gradle wrapper. Compile target is JVM 17;
+`component` explicitly uses `JvmDefaultMode.ENABLE`. The checked-in daemon criteria select
+JDK 25. No Android device is required, and the recorder never invokes adb.
 
-## Build and run
-
-Use JDK 21, Android SDK Platform 36, and Build Tools 36.0.0. Modules use JVM target 17 and minSdk 23;
-the app targets SDK 36. Versions match Benchmark: Gradle 9.6.1, AGP 9.4.1, Kotlin/Compose compiler
-2.4.20, Compose BOM 2026.02.01, and Activity Compose 1.12.4. Kotlin support is built into AGP;
-each module applies the Compose compiler plugin.
-
-Set the SDK location in an ignored `local.properties` file:
-
-```properties
-sdk.dir=/path/to/Android/sdk
-```
-
-Build and lint all modules, including the intentionally failing comparison tests:
+Start from the 1.0 branch:
 
 ```sh
-./gradlew build :app:assembleDebug --continue --max-workers=1
+git switch codex/contract-1.0
+python3 tools/record_abi.py 1.0 --publish-styling
 ```
 
-This command exits with a test failure by design. To assemble and lint without running tests:
+Then upgrade only Component:
 
 ```sh
-./gradlew assemble lint --continue --max-workers=1
+git switch codex/contract-1.1
+python3 tools/record_abi.py 1.1
 ```
 
-Run only the contract tests:
+The recorder publishes Component, publishes Styling only during the 1.0 stage, verifies App,
+checks the frozen Styling AAR checksum, and saves original evidence under `artifacts/1.0` and
+`artifacts/1.1`: Maven publications and source JARs, extracted class JARs, complete javap signatures,
+bytecode and verbose dumps, dependency reports, raw build logs, JUnit XML/HTML, lint reports,
+debug APKs, build configuration, manifests, and SHA-256 checksums.
 
-```sh
-./gradlew :component:testDebugUnitTest
-```
+The 1.1 App comparison intentionally fails only `jvmOverloadsDefault`: the old `$default` method
+is absent. Both contracts and the `@IntroducedAt` function must remain binary compatible.
+The recorder accepts exactly this outcome and rejects unexpected failures.
 
-Install on a connected device and launch:
+## Existing contract behavior tests
 
-```sh
-./gradlew :app:installDebug
-adb shell am start -n com.alexcawl.contract.playground.app/.MainActivity
-```
+`Contract1Test` and `Contract2Test` still contain exactly `isDelegated` and `isRebinding`.
+V1 delegates copied defaults to the original; V2 rebinds callbacks to the copied receiver.
+Those separate four tests intentionally have two failures, as documented in their report.
+`rememberCopy` retains the first copy at a composition location, matching Benchmark.
 
-The screen should display `Contract 1` and `Contract 2` with the same rounded corners, borders,
-and spacing clear of the system bars.
-
-Each contract test class has exactly two tests, `isDelegated` and `isRebinding`. Both copy a
-contract from 10 dp corners to 20 dp corners and check the dependent default shape and border
-callback. The assertions deliberately describe mutually exclusive behavior:
-
-| Test | Contract1 | Contract2 |
-| --- | --- | --- |
-| `isDelegated` | Pass: shape and border use the original 10 dp corners. | Fail: shape uses the copied 20 dp corners. |
-| `isRebinding` | Fail: shape uses the original 10 dp corners. | Pass: shape and border use the copied 20 dp corners. |
-
-The four-test suite intentionally reports two failures. V1 callbacks execute in a headless
-Compose composition; Android tracing calls are no-ops in these local unit tests.
+`app` displays two buttons using presets from the frozen Styling library. No compiler plugin
+or benchmark module is used.

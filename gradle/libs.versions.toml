@@ -4,6 +4,8 @@ agp = "9.4.1"
 compose-bom = "2026.02.01"
 activity-compose = "1.12.4"
 junit = "4.13.2"
+playground-component = "1.0"
+playground-baseline = "1.0"
 
 [libraries]
 androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
@@ -11,6 +13,9 @@ androidx-compose-foundation = { module = "androidx.compose.foundation:foundation
 androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 junit = { module = "junit:junit", version.ref = "junit" }
+playground-component-api = { module = "com.alexcawl.contract.playground:component", version.ref = "playground-component" }
+playground-component-baseline = { module = "com.alexcawl.contract.playground:component", version.ref = "playground-baseline" }
+playground-styling = { module = "com.alexcawl.contract.playground:styling", version.ref = "playground-baseline" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

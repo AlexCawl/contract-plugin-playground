@@ -20,6 +20,11 @@ android {
         compose = true
     }
 
+    testOptions {
+        // Headless Compose contract checks do not require Android tracing.
+        unitTests.isReturnDefaultValues = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -33,8 +38,9 @@ kotlin {
 }
 
 dependencies {
-    implementation(project(":component"))
-    implementation(project(":styling"))
+    implementation(libs.playground.component.api)
+    implementation(libs.playground.styling)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
+    testImplementation(libs.junit)
 }

@@ -1,7 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.compose)
+    `maven-publish`
 }
+
+group = "com.alexcawl.contract.playground"
+version = libs.versions.playground.baseline.get()
 
 android {
     namespace = "com.alexcawl.contract.playground.styling"
@@ -14,6 +18,12 @@ android {
 
     buildFeatures {
         compose = true
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
 
     compileOptions {
@@ -29,5 +39,15 @@ kotlin {
 }
 
 dependencies {
-    api(project(":component"))
+    api(libs.playground.component.baseline)
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }

@@ -8,6 +8,11 @@ pluginManagement {
 
 dependencyResolutionManagement {
     repositories {
+        mavenLocal {
+            content {
+                includeGroup("com.alexcawl.contract.playground")
+            }
+        }
         google()
         mavenCentral()
     }
