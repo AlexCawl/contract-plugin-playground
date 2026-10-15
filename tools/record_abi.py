@@ -34,10 +34,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("version", choices=("1.0", "1.1"))
     parser.add_argument("--publish-styling", action="store_true")
+    parser.add_argument("--label", help="New evidence directory; existing recordings are immutable")
+    parser.add_argument("--baseline-label", default="1.0", help="Evidence directory containing the frozen Styling AAR")
     args = parser.parse_args()
     assert args.publish_styling == (args.version == "1.0"), "Only the 1.0 stage publishes Styling"
     root = Path(__file__).resolve().parents[1]
-    output = root / "artifacts" / args.version
+    output = root / "artifacts" / (args.label or args.version)
+    if (output / "manifest.json").exists():
+        parser.error("Evidence already exists; choose a new --label to preserve the original recording")
     output.mkdir(parents=True, exist_ok=True)
     logs = output / "logs"
     logs.mkdir(exist_ok=True)
@@ -63,7 +67,7 @@ def main():
     maven = Path.home() / ".m2/repository/com/alexcawl/contract/playground"
     styling_aar = maven / "styling/1.0/styling-1.0.aar"
     if args.version == "1.1":
-        frozen = root / "artifacts/1.0/maven/styling/1.0/styling-1.0.aar"
+        frozen = root / "artifacts" / args.baseline_label / "maven/styling/1.0/styling-1.0.aar"
         assert sha256(styling_aar) == sha256(frozen), "Styling 1.0 changed before the upgrade"
 
     assert gradle("environment.log", "--version") == 0
@@ -78,13 +82,18 @@ def main():
 
     app_tests = test_results(root / "app/build/test-results/testDebugUnitTest")
     failures = [case for case in app_tests if case["status"] == "failed"]
-    assert len(app_tests) == 18, app_tests
-    expected_failures = [] if args.version == "1.0" else ["jvmOverloadsDefault"]
-    assert [case["name"] for case in failures] == expected_failures, failures
+    assert len(app_tests) == 12, app_tests
+    expected_failures = [] if args.version == "1.0" else ["jvmOverloadsDefault", "v1CopyDefault", "v1CopyFull"]
+    assert sorted(case["name"] for case in failures) == sorted(expected_failures), failures
     if failures:
-        assert failures[0]["failure_type"] == "java.lang.NoSuchMethodError", failures
+        failure_types = {case["name"]: case["failure_type"] for case in failures}
+        assert failure_types == {
+            "jvmOverloadsDefault": "java.lang.NoSuchMethodError",
+            "v1CopyDefault": "java.lang.AssertionError",
+            "v1CopyFull": "java.lang.AssertionError",
+        }, failures
     assert app_exit == (0 if args.version == "1.0" else 1), app_exit
-    assert sum(case["status"] == "skipped" for case in app_tests) == (1 if args.version == "1.0" else 0)
+    assert sum(case["status"] == "skipped" for case in app_tests) == 0
     semantics = test_results(root / "component/build/test-results/testDebugUnitTest")
     assert len(semantics) == 4, semantics
     assert {(case["class"].rsplit(".", 1)[-1], case["name"]) for case in semantics if case["status"] == "failed"} == {

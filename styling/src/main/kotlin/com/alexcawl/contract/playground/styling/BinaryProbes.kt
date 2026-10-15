@@ -26,9 +26,6 @@ object Contract1BinaryProbe {
         cornerSize = { 20.dp },
         shape = { RoundedCornerShape(cornerSize()) },
     )
-
-    @Composable
-    fun rememberedCopy(source: Contract1): Contract1 = source.rememberCopy(cornerSize = { 20.dp })
 }
 
 object Contract2BinaryProbe {
@@ -43,13 +40,6 @@ object Contract2BinaryProbe {
 
     fun copyFull(source: Contract2): Contract2 = source.copy(
         cornerSize = { 20.dp },
-        shape = { RoundedCornerShape(cornerSize()) },
-    )
-
-    fun snapshotDefault(): Contract2.Contract = Contract2.Contract(cornerSize = { 10.dp })
-
-    fun snapshotFull(): Contract2.Contract = Contract2.Contract(
-        cornerSize = { 10.dp },
         shape = { RoundedCornerShape(cornerSize()) },
     )
 }

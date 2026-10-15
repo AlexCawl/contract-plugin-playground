@@ -28,25 +28,27 @@ Start from the 1.0 branch:
 
 ```sh
 git switch codex/contract-1.0
-python3 tools/record_abi.py 1.0 --publish-styling
+python3 tools/record_abi.py 1.0 --publish-styling --label 1.0-probes
 ```
 
 Then upgrade only Component:
 
 ```sh
 git switch codex/contract-1.1
-python3 tools/record_abi.py 1.1
+python3 tools/record_abi.py 1.1 --label 1.1-probes --baseline-label 1.0-probes
 ```
 
 The recorder publishes Component, publishes Styling only during the 1.0 stage, verifies App,
-checks the frozen Styling AAR checksum, and saves original evidence under `artifacts/1.0` and
-`artifacts/1.1`: Maven publications and source JARs, extracted class JARs, complete javap signatures,
+checks the frozen Styling AAR checksum, and saves original evidence under `artifacts/1.0-probes` and
+`artifacts/1.1-probes`: Maven publications and source JARs, extracted class JARs, complete javap signatures,
 bytecode and verbose dumps, dependency reports, raw build logs, JUnit XML/HTML, lint reports,
 debug APKs, build configuration, manifests, and SHA-256 checksums.
 
-The 1.1 App comparison intentionally fails only `jvmOverloadsDefault`: the old `$default` method
-is absent. Both contracts and the `@IntroducedAt` function must remain binary compatible.
-The recorder accepts exactly this outcome and rejects unexpected failures.
+The App suite has exactly one test for each of the 12 current probes. With frozen Styling 1.0,
+Component 1.1 fails `v1CopyDefault` and `v1CopyFull` because old inline copies lose the new border
+callback, and `jvmOverloadsDefault` because the old `$default` method is absent. V2 and
+`@IntroducedAt` calls pass. The recorder checks this exact result. Original 18-test recordings
+under `artifacts/1.0` and `artifacts/1.1` remain unchanged; new recordings require a fresh label.
 
 ## Existing contract behavior tests
 
