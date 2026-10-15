@@ -44,12 +44,6 @@ interface Contract1Wrapper : Contract1 {
     val wrapped: Contract1
 }
 
-@Deprecated("Binary compatibility with 1.0", level = DeprecationLevel.HIDDEN)
-inline fun Contract1(
-    crossinline cornerSize: @Composable Contract1.() -> Dp,
-    noinline shape: (@Composable Contract1.() -> Shape)? = null,
-): Contract1 = Contract1(cornerSize = cornerSize, shape = shape, borderStroke = null)
-
 @RememberInComposition
 inline fun Contract1.copy(
     crossinline cornerSize: @Composable Contract1Wrapper.() -> Dp = { wrapped.cornerSize() },
@@ -78,25 +72,3 @@ inline fun Contract1.rememberCopy(
     // shortcut: retains the first copy when the source changes; add keys if reactive copies are needed.
     copy(cornerSize = cornerSize, shape = shape, borderStroke = borderStroke)
 }
-
-@Deprecated("Binary compatibility with 1.0", level = DeprecationLevel.HIDDEN)
-@RememberInComposition
-inline fun Contract1.copy(
-    crossinline cornerSize: @Composable Contract1Wrapper.() -> Dp = { wrapped.cornerSize() },
-    crossinline shape: @Composable Contract1Wrapper.() -> Shape = { wrapped.shape() },
-): Contract1 = copy(
-    cornerSize = cornerSize,
-    shape = shape,
-    borderStroke = { wrapped.borderStroke() },
-)
-
-@Deprecated("Binary compatibility with 1.0", level = DeprecationLevel.HIDDEN)
-@Composable
-inline fun Contract1.rememberCopy(
-    crossinline cornerSize: @Composable Contract1Wrapper.() -> Dp = { wrapped.cornerSize() },
-    crossinline shape: @Composable Contract1Wrapper.() -> Shape = { wrapped.shape() },
-): Contract1 = rememberCopy(
-    cornerSize = cornerSize,
-    shape = shape,
-    borderStroke = { wrapped.borderStroke() },
-)
