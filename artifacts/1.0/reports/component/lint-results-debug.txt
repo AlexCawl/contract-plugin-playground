@@ -1,0 +1,58 @@
+/Users/mikhail/Developer/contract-plugin-playground/gradle/wrapper/gradle-wrapper.properties:4: Warning: A newer version of Gradle than 9.6.1 is available: 9.8.1 [AndroidGradlePluginVersion]
+distributionUrl=https\://services.gradle.org/distributions/gradle-9.6.1-bin.zip
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+/Users/mikhail/Developer/contract-plugin-playground/component/build.gradle.kts:12: Warning: A newer version of compileSdk than 36 is available: 37 [GradleDependency]
+    compileSdk = 36
+    ~~~~~~~~~~~~~~~
+/Users/mikhail/Developer/contract-plugin-playground/gradle/libs.versions.toml:4: Warning: A newer version of androidx.compose:compose-bom than 2026.02.01 is available: 2026.09.00 [GradleDependency]
+compose-bom = "2026.02.01"
+              ~~~~~~~~~~~~
+/Users/mikhail/Developer/contract-plugin-playground/gradle/libs.versions.toml:5: Warning: A newer version of androidx.activity:activity-compose than 1.12.4 is available: 1.13.0 [GradleDependency]
+activity-compose = "1.12.4"
+                   ~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/mikhail/Developer/contract-plugin-playground/gradle/libs.versions.toml:2: Warning: A newer version of org.jetbrains.kotlin.jvm than 2.4.20 is available: 2.4.21 [NewerVersionAvailable]
+kotlin = "2.4.20"
+         ~~~~~~~~
+/Users/mikhail/Developer/contract-plugin-playground/gradle/libs.versions.toml:2: Warning: A newer version of org.jetbrains.kotlin.plugin.compose than 2.4.20 is available: 2.4.21 [NewerVersionAvailable]
+kotlin = "2.4.20"
+         ~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+/Users/mikhail/Developer/contract-plugin-playground/gradle/libs.versions.toml:16: Hint: There are multiple dependencies com.alexcawl.contract.playground:component but with different version [SimilarGradleDependency]
+playground-component-api = { module = "com.alexcawl.contract.playground:component", version.ref = "playground-component" }
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/mikhail/Developer/contract-plugin-playground/gradle/libs.versions.toml:17: Hint: There are multiple dependencies com.alexcawl.contract.playground:component but with different version [SimilarGradleDependency]
+playground-component-baseline = { module = "com.alexcawl.contract.playground:component", version.ref = "playground-baseline" }
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SimilarGradleDependency":
+   This detector looks for usages of libraries when name and group are the
+   same but versions are different. Using multiple versions in big project is
+   fine, and there are cases where you deliberately want to stick with such
+   approach. However, you may simply not be aware that this situation happens,
+   and that is what this lint check helps find.
+
+0 errors, 6 warnings, 2 hints

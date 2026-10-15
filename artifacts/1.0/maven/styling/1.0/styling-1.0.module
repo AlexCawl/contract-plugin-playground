@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.alexcawl.contract.playground",
+    "module": "styling",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.alexcawl.contract.playground",
+          "module": "component",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "styling-1.0.aar",
+          "url": "styling-1.0.aar",
+          "size": 23544,
+          "sha512": "4f5c5c0031c7daac2c657f1a1e18937c158084696c6da6ca28c1de3759583543fd6c4db740fe90b00fe5ecc61e20049540ed95002b0789f2350840e3960acc71",
+          "sha256": "c7beae984b0dabaf3dfee842a6194e47306448ff1e2e6ba0eb9cdd4bea3a41df",
+          "sha1": "b54563f9daa372ce002397d8ea40971bf6ee3435",
+          "md5": "aac958c88824448f59b50ef6e61eb670"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.alexcawl.contract.playground",
+          "module": "component",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "styling-1.0.aar",
+          "url": "styling-1.0.aar",
+          "size": 23544,
+          "sha512": "4f5c5c0031c7daac2c657f1a1e18937c158084696c6da6ca28c1de3759583543fd6c4db740fe90b00fe5ecc61e20049540ed95002b0789f2350840e3960acc71",
+          "sha256": "c7beae984b0dabaf3dfee842a6194e47306448ff1e2e6ba0eb9cdd4bea3a41df",
+          "sha1": "b54563f9daa372ce002397d8ea40971bf6ee3435",
+          "md5": "aac958c88824448f59b50ef6e61eb670"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "styling-1.0-sources.jar",
+          "url": "styling-1.0-sources.jar",
+          "size": 2742,
+          "sha512": "d37d4764f65c8e47134fb2b3a59055f34eff84f280c88e3537cddf57ae182ab452c232313a889a2e71017d19f23434f82b21ab9d24ae1fe4eb9af5cc4e019df2",
+          "sha256": "b3e1ff8773e9324b88e439c5a582336794ee4ef862a44736d4c881155dd31ad7",
+          "sha1": "c70bbf5f9f079c78dd315bef98972239b0916a8c",
+          "md5": "7728dc4b2295ef9912649e28b0240dda"
+        }
+      ]
+    }
+  ]
+}
