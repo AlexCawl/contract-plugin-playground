@@ -1,0 +1,79 @@
+Calculating task graph as no cached configuration is available for tasks: :styling:publishReleasePublicationToMavenLocal :styling:lintDebug
+> Task :styling:preBuild UP-TO-DATE
+> Task :styling:preReleaseBuild UP-TO-DATE
+> Task :styling:checkReleaseAarMetadata
+> Task :styling:mergeReleaseJniLibFolders
+> Task :styling:mergeReleaseNativeLibs NO-SOURCE
+> Task :styling:stripReleaseDebugSymbols NO-SOURCE
+> Task :styling:copyReleaseJniLibsProjectAndLocalJars
+> Task :styling:extractDeepLinksForAarRelease FROM-CACHE
+> Task :styling:generateReleaseResources FROM-CACHE
+> Task :styling:packageReleaseResources
+> Task :styling:processReleaseNavigationResources FROM-CACHE
+> Task :styling:parseReleaseLocalResources FROM-CACHE
+> Task :styling:generateReleaseRFile
+> Task :styling:extractReleaseAnnotations
+> Task :styling:generateReleaseAssets UP-TO-DATE
+> Task :styling:mergeReleaseAssets
+> Task :styling:compileReleaseKotlin
+> Task :styling:javaPreCompileRelease FROM-CACHE
+> Task :styling:compileReleaseJavaWithJavac NO-SOURCE
+> Task :styling:mergeReleaseGeneratedProguardFiles
+> Task :styling:mergeReleaseConsumerProguardFiles
+> Task :styling:prepareLintJarForPublish
+> Task :styling:prepareReleaseArtProfile
+> Task :styling:processReleaseManifest
+> Task :styling:processReleaseJavaRes
+> Task :styling:mergeReleaseJavaResource
+> Task :styling:syncReleaseLibJars
+> Task :styling:writeReleaseAarMetadata
+> Task :styling:bundleReleaseAar
+> Task :styling:sourceReleaseJar
+> Task :styling:generateMetadataFileForReleasePublication
+> Task :styling:generatePomFileForReleasePublication
+> Task :styling:publishReleasePublicationToMavenLocal
+> Task :styling:preDebugBuild UP-TO-DATE
+> Task :styling:checkDebugAarMetadata
+> Task :styling:generateDebugResources FROM-CACHE
+> Task :styling:packageDebugResources
+> Task :styling:processDebugNavigationResources FROM-CACHE
+> Task :styling:parseDebugLocalResources FROM-CACHE
+> Task :styling:generateDebugRFile FROM-CACHE
+> Task :styling:extractDebugAnnotations FROM-CACHE
+> Task :styling:extractDeepLinksForAarDebug FROM-CACHE
+> Task :styling:generateDebugAssets UP-TO-DATE
+> Task :styling:mergeDebugAssets
+> Task :styling:compileDebugKotlin
+> Task :styling:javaPreCompileDebug FROM-CACHE
+> Task :styling:compileDebugJavaWithJavac NO-SOURCE
+> Task :styling:mergeDebugGeneratedProguardFiles
+> Task :styling:mergeDebugConsumerProguardFiles
+> Task :styling:prepareDebugArtProfile
+> Task :styling:processDebugManifest FROM-CACHE
+> Task :styling:processDebugJavaRes
+> Task :styling:mergeDebugJavaResource
+> Task :styling:syncDebugLibJars
+> Task :styling:writeDebugAarMetadata
+> Task :styling:bundleDebugLocalLintAar
+> Task :styling:bundleLibRuntimeToJarDebug
+> Task :styling:createFullJarDebug
+> Task :styling:preDebugAndroidTestBuild UP-TO-DATE
+> Task :styling:writeDebugLintModelMetadata
+> Task :styling:generateDebugAndroidTestLintModel
+> Task :styling:extractProguardFiles
+> Task :styling:generateDebugLintReportModel
+> Task :styling:preDebugUnitTestBuild UP-TO-DATE
+> Task :styling:generateDebugUnitTestLintModel
+> Task :styling:lintAnalyzeDebug
+> Task :styling:lintAnalyzeDebugAndroidTest
+> Task :styling:lintAnalyzeDebugUnitTest
+
+> Task :styling:lintReportDebug
+Wrote HTML report to file:///Users/mikhail/Developer/contract-plugin-playground/styling/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///Users/mikhail/Developer/contract-plugin-playground/styling/build/reports/lint-results-debug.sarif
+
+> Task :styling:lintDebug
+
+BUILD SUCCESSFUL in 2s
+59 actionable tasks: 46 executed, 13 from cache
+Configuration cache entry stored.

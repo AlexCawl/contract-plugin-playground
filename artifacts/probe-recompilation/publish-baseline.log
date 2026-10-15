@@ -1,0 +1,38 @@
+Calculating task graph as no cached configuration is available for tasks: :styling:publishReleasePublicationToMavenLocal
+> Task :styling:preBuild UP-TO-DATE
+> Task :styling:preReleaseBuild UP-TO-DATE
+> Task :styling:checkReleaseAarMetadata
+> Task :styling:mergeReleaseJniLibFolders
+> Task :styling:mergeReleaseNativeLibs NO-SOURCE
+> Task :styling:stripReleaseDebugSymbols NO-SOURCE
+> Task :styling:copyReleaseJniLibsProjectAndLocalJars
+> Task :styling:extractDeepLinksForAarRelease FROM-CACHE
+> Task :styling:generateReleaseResources FROM-CACHE
+> Task :styling:packageReleaseResources FROM-CACHE
+> Task :styling:processReleaseNavigationResources FROM-CACHE
+> Task :styling:parseReleaseLocalResources FROM-CACHE
+> Task :styling:generateReleaseRFile FROM-CACHE
+> Task :styling:extractReleaseAnnotations
+> Task :styling:generateReleaseAssets UP-TO-DATE
+> Task :styling:mergeReleaseAssets
+> Task :styling:compileReleaseKotlin
+> Task :styling:javaPreCompileRelease FROM-CACHE
+> Task :styling:compileReleaseJavaWithJavac NO-SOURCE
+> Task :styling:mergeReleaseGeneratedProguardFiles
+> Task :styling:mergeReleaseConsumerProguardFiles
+> Task :styling:prepareLintJarForPublish
+> Task :styling:prepareReleaseArtProfile
+> Task :styling:processReleaseManifest FROM-CACHE
+> Task :styling:processReleaseJavaRes
+> Task :styling:mergeReleaseJavaResource
+> Task :styling:syncReleaseLibJars
+> Task :styling:writeReleaseAarMetadata
+> Task :styling:bundleReleaseAar
+> Task :styling:sourceReleaseJar
+> Task :styling:generateMetadataFileForReleasePublication
+> Task :styling:generatePomFileForReleasePublication
+> Task :styling:publishReleasePublicationToMavenLocal
+
+BUILD SUCCESSFUL in 1s
+27 actionable tasks: 19 executed, 8 from cache
+Configuration cache entry stored.

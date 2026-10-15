@@ -1,0 +1,88 @@
+Calculating task graph as no cached configuration is available for tasks: :component:publishReleasePublicationToMavenLocal :component:lintDebug
+> Task :component:preBuild UP-TO-DATE
+> Task :component:preReleaseBuild UP-TO-DATE
+> Task :component:checkReleaseAarMetadata UP-TO-DATE
+> Task :component:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :component:mergeReleaseNativeLibs NO-SOURCE
+> Task :component:stripReleaseDebugSymbols NO-SOURCE
+> Task :component:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :component:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :component:generateReleaseResources UP-TO-DATE
+> Task :component:packageReleaseResources UP-TO-DATE
+> Task :component:processReleaseNavigationResources UP-TO-DATE
+> Task :component:parseReleaseLocalResources UP-TO-DATE
+> Task :component:generateReleaseRFile UP-TO-DATE
+> Task :component:extractReleaseAnnotations UP-TO-DATE
+> Task :component:generateReleaseAssets UP-TO-DATE
+> Task :component:mergeReleaseAssets UP-TO-DATE
+> Task :component:compileReleaseKotlin UP-TO-DATE
+> Task :component:javaPreCompileRelease UP-TO-DATE
+> Task :component:compileReleaseJavaWithJavac NO-SOURCE
+> Task :component:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :component:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :component:prepareLintJarForPublish UP-TO-DATE
+> Task :component:prepareReleaseArtProfile UP-TO-DATE
+> Task :component:processReleaseManifest UP-TO-DATE
+> Task :component:processReleaseJavaRes UP-TO-DATE
+> Task :component:mergeReleaseJavaResource UP-TO-DATE
+> Task :component:syncReleaseLibJars UP-TO-DATE
+> Task :component:writeReleaseAarMetadata UP-TO-DATE
+> Task :component:bundleReleaseAar UP-TO-DATE
+> Task :component:sourceReleaseJar UP-TO-DATE
+> Task :component:generateMetadataFileForReleasePublication
+> Task :component:generatePomFileForReleasePublication
+> Task :component:publishReleasePublicationToMavenLocal
+> Task :component:preDebugBuild UP-TO-DATE
+> Task :component:checkDebugAarMetadata
+> Task :component:generateDebugResources FROM-CACHE
+> Task :component:packageDebugResources
+> Task :component:processDebugNavigationResources FROM-CACHE
+> Task :component:parseDebugLocalResources FROM-CACHE
+> Task :component:generateDebugRFile FROM-CACHE
+> Task :component:extractDebugAnnotations FROM-CACHE
+> Task :component:extractDeepLinksForAarDebug FROM-CACHE
+> Task :component:generateDebugAssets UP-TO-DATE
+> Task :component:mergeDebugAssets
+
+> Task :component:compileDebugKotlin
+w: file:///Users/mikhail/Developer/contract-plugin-playground/component/src/main/kotlin/com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode.kt:3:8 This class is not recommended for use in Kotlin. Use 'kotlin.Byte' instead.
+w: file:///Users/mikhail/Developer/contract-plugin-playground/component/src/main/kotlin/com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode.kt:4:8 This class is not recommended for use in Kotlin. Use 'kotlin.Double' instead.
+w: file:///Users/mikhail/Developer/contract-plugin-playground/component/src/main/kotlin/com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode.kt:5:8 This class is not recommended for use in Kotlin. Use 'kotlin.Float' instead.
+w: file:///Users/mikhail/Developer/contract-plugin-playground/component/src/main/kotlin/com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode.kt:6:8 This class is not recommended for use in Kotlin. Use 'kotlin.Long' instead.
+w: file:///Users/mikhail/Developer/contract-plugin-playground/component/src/main/kotlin/com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode.kt:7:8 This class is not recommended for use in Kotlin. Use 'kotlin.Short' instead.
+
+> Task :component:javaPreCompileDebug FROM-CACHE
+> Task :component:compileDebugJavaWithJavac NO-SOURCE
+> Task :component:mergeDebugGeneratedProguardFiles
+> Task :component:mergeDebugConsumerProguardFiles
+> Task :component:prepareDebugArtProfile
+> Task :component:processDebugManifest FROM-CACHE
+> Task :component:processDebugJavaRes
+> Task :component:mergeDebugJavaResource
+> Task :component:syncDebugLibJars
+> Task :component:writeDebugAarMetadata
+> Task :component:bundleDebugLocalLintAar
+> Task :component:bundleLibRuntimeToJarDebug
+> Task :component:createFullJarDebug
+> Task :component:preDebugAndroidTestBuild UP-TO-DATE
+> Task :component:writeDebugLintModelMetadata
+> Task :component:generateDebugAndroidTestLintModel
+> Task :component:extractProguardFiles
+> Task :component:generateDebugLintReportModel
+> Task :component:preDebugUnitTestBuild UP-TO-DATE
+> Task :component:generateDebugUnitTestLintModel
+> Task :component:lintAnalyzeDebug
+> Task :component:lintAnalyzeDebugAndroidTest
+> Task :component:lintAnalyzeDebugUnitTest
+
+> Task :component:lintReportDebug
+Wrote HTML report to file:///Users/mikhail/Developer/contract-plugin-playground/component/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///Users/mikhail/Developer/contract-plugin-playground/component/build/reports/lint-results-debug.sarif
+
+> Task :component:lintDebug
+
+[Incubating] Problems report is available at: file:///Users/mikhail/Developer/contract-plugin-playground/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 5s
+59 actionable tasks: 27 executed, 8 from cache, 24 up-to-date
+Configuration cache entry stored.

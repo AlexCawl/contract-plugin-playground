@@ -1,0 +1,1271 @@
+Compiled from "BinaryProbes.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe {
+  public static final com.alexcawl.contract.playground.styling.Contract1BinaryProbe INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/Contract1BinaryProbe;
+
+  public static final int $stable;
+    descriptor: I
+
+  private com.alexcawl.contract.playground.styling.Contract1BinaryProbe();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 factoryDefault();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: nop
+       1: aconst_null
+       2: astore_1
+       3: iconst_0
+       4: istore_2
+       5: new           #15                 // class com/alexcawl/contract/playground/styling/Contract1BinaryProbe$factoryDefault$$inlined$Contract1$default$1
+       8: dup
+       9: aload_1
+      10: invokespecial #18                 // Method com/alexcawl/contract/playground/styling/Contract1BinaryProbe$factoryDefault$$inlined$Contract1$default$1."<init>":(Lkotlin/jvm/functions/Function3;)V
+      13: checkcast     #20                 // class com/alexcawl/contract/playground/component/v1/Contract1
+      16: nop
+      17: areturn
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 factoryFull();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: invokedynamic #45,  0             // InvokeDynamic #0:invoke:()Lkotlin/jvm/functions/Function3;
+       5: astore_1
+       6: iconst_0
+       7: istore_2
+       8: new           #47                 // class com/alexcawl/contract/playground/styling/Contract1BinaryProbe$factoryFull$$inlined$Contract1$1
+      11: dup
+      12: aload_1
+      13: invokespecial #48                 // Method com/alexcawl/contract/playground/styling/Contract1BinaryProbe$factoryFull$$inlined$Contract1$1."<init>":(Lkotlin/jvm/functions/Function3;)V
+      16: checkcast     #20                 // class com/alexcawl/contract/playground/component/v1/Contract1
+      19: nop
+      20: areturn
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 copyDefault(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: aload_1
+       1: ldc           #52                 // String source
+       3: invokestatic  #58                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: astore_2
+       8: iconst_0
+       9: istore_3
+      10: new           #60                 // class com/alexcawl/contract/playground/styling/Contract1BinaryProbe$copyDefault$$inlined$copy$default$1
+      13: dup
+      14: aload_2
+      15: invokespecial #63                 // Method com/alexcawl/contract/playground/styling/Contract1BinaryProbe$copyDefault$$inlined$copy$default$1."<init>":(Lcom/alexcawl/contract/playground/component/v1/Contract1;)V
+      18: checkcast     #20                 // class com/alexcawl/contract/playground/component/v1/Contract1
+      21: nop
+      22: areturn
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 copyFull(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: aload_1
+       1: ldc           #52                 // String source
+       3: invokestatic  #58                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: astore_2
+       8: iconst_0
+       9: istore_3
+      10: new           #69                 // class com/alexcawl/contract/playground/styling/Contract1BinaryProbe$copyFull$$inlined$copy$1
+      13: dup
+      14: aload_2
+      15: invokespecial #70                 // Method com/alexcawl/contract/playground/styling/Contract1BinaryProbe$copyFull$$inlined$copy$1."<init>":(Lcom/alexcawl/contract/playground/component/v1/Contract1;)V
+      18: checkcast     #20                 // class com/alexcawl/contract/playground/component/v1/Contract1
+      21: nop
+      22: areturn
+
+  private static final androidx.compose.ui.graphics.Shape factoryFull$lambda$1(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_0
+       1: ldc           #74                 // String $this$Contract1
+       3: invokestatic  #58                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: ldc           #75                 // int 836374814
+       9: invokeinterface #81,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      14: aload_1
+      15: ldc           #83                 // String C19@943L12:BinaryProbes.kt#ixohzb
+      17: invokestatic  #89                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      20: invokestatic  #93                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      23: ifeq          35
+      26: ldc           #75                 // int 836374814
+      28: iload_2
+      29: iconst_m1
+      30: ldc           #95                 // String com.alexcawl.contract.playground.styling.Contract1BinaryProbe.factoryFull.<anonymous> (BinaryProbes.kt:19)
+      32: invokestatic  #99                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      35: aload_0
+      36: aload_1
+      37: bipush        14
+      39: iload_2
+      40: iand
+      41: invokeinterface #103,  3          // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1."cornerSize-chRvn1I":(Landroidx/compose/runtime/Composer;I)F
+      46: invokestatic  #109                // Method androidx/compose/foundation/shape/RoundedCornerShapeKt."RoundedCornerShape-0680j_4":(F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+      49: astore_3
+      50: invokestatic  #93                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      53: ifeq          59
+      56: invokestatic  #112                // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+      59: aload_1
+      60: invokeinterface #115,  1          // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+      65: aload_3
+      66: checkcast     #117                // class androidx/compose/ui/graphics/Shape
+      69: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class com/alexcawl/contract/playground/styling/Contract1BinaryProbe
+       3: dup
+       4: invokespecial #124                // Method "<init>":()V
+       7: putstatic     #127                // Field INSTANCE:Lcom/alexcawl/contract/playground/styling/Contract1BinaryProbe;
+      10: return
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyDefault$$inlined$copy$default$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyDefault$$inlined$copy$default$1(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field $this_copy:Lcom/alexcawl/contract/playground/component/v1/Contract1;
+       5: aload_0
+       6: invokespecial #20                 // Method com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode."<init>":()V
+       9: return
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field $this_copy:Lcom/alexcawl/contract/playground/component/v1/Contract1;
+       4: areturn
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+    Code:
+       0: aload_1
+       1: ldc           #29                 // int -1410677826
+       3: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #37                 // String C(cornerSize)47@1451L12:Contract1.kt#4g3aoj
+      11: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #29                 // int -1410677826
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #49                 // String com.alexcawl.contract.playground.component.v1.copy.<no name provided>.cornerSize (Contract1.kt:47)
+      26: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1Wrapper
+      41: astore        5
+      43: iconst_0
+      44: istore        6
+      46: aload         4
+      48: ldc           #54                 // int 214927351
+      50: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      55: aload         4
+      57: ldc           #56                 // String C:BinaryProbes.kt#ixohzb
+      59: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      62: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      65: ifeq          77
+      68: ldc           #54                 // int 214927351
+      70: iload_3
+      71: iconst_m1
+      72: ldc           #58                 // String com.alexcawl.contract.playground.styling.Contract1BinaryProbe.copyDefault.<anonymous> (BinaryProbes.kt:22)
+      74: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      77: bipush        20
+      79: istore        7
+      81: iconst_0
+      82: istore        8
+      84: iload         7
+      86: i2f
+      87: invokestatic  #64                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      90: fstore        9
+      92: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      95: ifeq          101
+      98: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     101: aload         4
+     103: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     108: fload         9
+     110: fstore        5
+     112: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     115: ifeq          121
+     118: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     121: aload_1
+     122: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     127: fload         5
+     129: freturn
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_1
+       1: ldc           #82                 // int -158092742
+       3: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #84                 // String C(shape)50@1521L12:Contract1.kt#4g3aoj
+      11: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #82                 // int -158092742
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #86                 // String com.alexcawl.contract.playground.component.v1.copy.<no name provided>.shape (Contract1.kt:50)
+      26: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: astore        5
+      40: iconst_0
+      41: istore        6
+      43: aload         5
+      45: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1Wrapper
+      48: aload         4
+      50: iload_3
+      51: istore_3
+      52: astore        4
+      54: astore        5
+      56: aload         4
+      58: ldc           #87                 // int 302401493
+      60: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      65: aload         4
+      67: ldc           #89                 // String C41@1243L7:Contract1.kt#4g3aoj
+      69: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      72: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      75: ifeq          87
+      78: ldc           #87                 // int 302401493
+      80: iload_3
+      81: iconst_m1
+      82: ldc           #91                 // String com.alexcawl.contract.playground.component.v1.copy.<anonymous> (Contract1.kt:41)
+      84: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      87: aload         5
+      89: invokeinterface #93,  1           // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1Wrapper.getWrapped:()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+      94: aload         4
+      96: iconst_0
+      97: invokeinterface #97,  3           // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1.shape:(Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+     102: astore        7
+     104: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     107: ifeq          113
+     110: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     113: aload         4
+     115: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     120: aload         7
+     122: astore        5
+     124: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     127: ifeq          133
+     130: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     133: aload_1
+     134: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     139: aload         5
+     141: areturn
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyFull$$inlined$copy$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyFull$$inlined$copy$1(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field $this_copy:Lcom/alexcawl/contract/playground/component/v1/Contract1;
+       5: aload_0
+       6: invokespecial #20                 // Method com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode."<init>":()V
+       9: return
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field $this_copy:Lcom/alexcawl/contract/playground/component/v1/Contract1;
+       4: areturn
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+    Code:
+       0: aload_1
+       1: ldc           #29                 // int -1410677826
+       3: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #37                 // String C(cornerSize)47@1451L12:Contract1.kt#4g3aoj
+      11: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #29                 // int -1410677826
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #49                 // String com.alexcawl.contract.playground.component.v1.copy.<no name provided>.cornerSize (Contract1.kt:47)
+      26: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1Wrapper
+      41: astore        5
+      43: iconst_0
+      44: istore        6
+      46: aload         4
+      48: ldc           #54                 // int -546536741
+      50: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      55: aload         4
+      57: ldc           #56                 // String C:BinaryProbes.kt#ixohzb
+      59: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      62: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      65: ifeq          77
+      68: ldc           #54                 // int -546536741
+      70: iload_3
+      71: iconst_m1
+      72: ldc           #58                 // String com.alexcawl.contract.playground.styling.Contract1BinaryProbe.copyFull.<anonymous> (BinaryProbes.kt:25)
+      74: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      77: bipush        20
+      79: istore        7
+      81: iconst_0
+      82: istore        8
+      84: iload         7
+      86: i2f
+      87: invokestatic  #64                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      90: fstore        9
+      92: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      95: ifeq          101
+      98: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     101: aload         4
+     103: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     108: fload         9
+     110: fstore        5
+     112: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     115: ifeq          121
+     118: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     121: aload_1
+     122: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     127: fload         5
+     129: freturn
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_1
+       1: ldc           #82                 // int -158092742
+       3: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #84                 // String C(shape)50@1521L12:Contract1.kt#4g3aoj
+      11: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #82                 // int -158092742
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #86                 // String com.alexcawl.contract.playground.component.v1.copy.<no name provided>.shape (Contract1.kt:50)
+      26: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1Wrapper
+      41: astore        5
+      43: iconst_0
+      44: istore        6
+      46: aload         4
+      48: ldc           #87                 // int -695735151
+      50: invokeinterface #35,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      55: aload         4
+      57: ldc           #89                 // String C*26@1187L12:BinaryProbes.kt#ixohzb
+      59: invokestatic  #43                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      62: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      65: ifeq          77
+      68: ldc           #87                 // int -695735151
+      70: iload_3
+      71: iconst_m1
+      72: ldc           #91                 // String com.alexcawl.contract.playground.styling.Contract1BinaryProbe.copyFull.<anonymous> (BinaryProbes.kt:26)
+      74: invokestatic  #53                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      77: aload         5
+      79: aload         4
+      81: bipush        14
+      83: iload_3
+      84: iand
+      85: invokeinterface #93,  3           // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1Wrapper."cornerSize-chRvn1I":(Landroidx/compose/runtime/Composer;I)F
+      90: invokestatic  #99                 // Method androidx/compose/foundation/shape/RoundedCornerShapeKt."RoundedCornerShape-0680j_4":(F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+      93: astore        7
+      95: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      98: ifeq          104
+     101: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     104: aload         4
+     106: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     111: aload         7
+     113: checkcast     #101                // class androidx/compose/ui/graphics/Shape
+     116: astore        5
+     118: invokestatic  #47                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     121: ifeq          127
+     124: invokestatic  #67                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     127: aload_1
+     128: invokeinterface #70,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     133: aload         5
+     135: areturn
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryDefault$$inlined$Contract1$default$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryDefault$$inlined$Contract1$default$1(kotlin.jvm.functions.Function3);
+    descriptor: (Lkotlin/jvm/functions/Function3;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+       5: aload_0
+       6: invokespecial #20                 // Method com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode."<init>":()V
+       9: return
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+    Code:
+       0: aload_1
+       1: ldc           #26                 // int -555822509
+       3: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #34                 // String C(cornerSize)27@827L12:Contract1.kt#4g3aoj
+      11: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #26                 // int -555822509
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #46                 // String com.alexcawl.contract.playground.component.v1.Contract1.<no name provided>.cornerSize (Contract1.kt:27)
+      26: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1
+      41: astore        5
+      43: iconst_0
+      44: istore        6
+      46: aload         4
+      48: ldc           #51                 // int -945083270
+      50: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      55: aload         4
+      57: ldc           #53                 // String C:BinaryProbes.kt#ixohzb
+      59: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      62: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      65: ifeq          77
+      68: ldc           #51                 // int -945083270
+      70: iload_3
+      71: iconst_m1
+      72: ldc           #55                 // String com.alexcawl.contract.playground.styling.Contract1BinaryProbe.factoryDefault.<anonymous> (BinaryProbes.kt:15)
+      74: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      77: bipush        10
+      79: istore        7
+      81: iconst_0
+      82: istore        8
+      84: iload         7
+      86: i2f
+      87: invokestatic  #61                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      90: fstore        9
+      92: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      95: ifeq          101
+      98: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     101: aload         4
+     103: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     108: fload         9
+     110: fstore        5
+     112: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     115: ifeq          121
+     118: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     121: aload_1
+     122: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     127: fload         5
+     129: freturn
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_1
+       1: ldc           #79                 // int -1765685673
+       3: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #81                 // String C(shape):Contract1.kt#4g3aoj
+      11: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #79                 // int -1765685673
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #83                 // String com.alexcawl.contract.playground.component.v1.Contract1.<no name provided>.shape (Contract1.kt:30)
+      26: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: getfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+      33: ifnull        82
+      36: aload_1
+      37: ldc           #84                 // int -311848349
+      39: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      44: aload_1
+      45: ldc           #86                 // String 30@916L12
+      47: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      50: aload_0
+      51: getfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+      54: aload_0
+      55: aload_1
+      56: bipush        14
+      58: iload_2
+      59: iand
+      60: invokestatic  #92                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      63: invokeinterface #98,  4           // InterfaceMethod kotlin/jvm/functions/Function3.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      68: checkcast     #100                // class androidx/compose/ui/graphics/Shape
+      71: astore_3
+      72: aload_1
+      73: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+      78: aload_3
+      79: goto          113
+      82: aload_1
+      83: ldc           #101                // int -311847586
+      85: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      90: aload_1
+      91: ldc           #103                // String 30@940L7
+      93: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      96: aload_0
+      97: aload_1
+      98: bipush        14
+     100: iload_2
+     101: iand
+     102: invokespecial #105                // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1.shape:(Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+     105: astore_3
+     106: aload_1
+     107: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     112: aload_3
+     113: astore        4
+     115: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     118: ifeq          124
+     121: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     124: aload_1
+     125: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     130: aload         4
+     132: areturn
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryFull$$inlined$Contract1$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryFull$$inlined$Contract1$1(kotlin.jvm.functions.Function3);
+    descriptor: (Lkotlin/jvm/functions/Function3;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+       5: aload_0
+       6: invokespecial #20                 // Method com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode."<init>":()V
+       9: return
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+    Code:
+       0: aload_1
+       1: ldc           #26                 // int -555822509
+       3: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #34                 // String C(cornerSize)27@827L12:Contract1.kt#4g3aoj
+      11: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #26                 // int -555822509
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #46                 // String com.alexcawl.contract.playground.component.v1.Contract1.<no name provided>.cornerSize (Contract1.kt:27)
+      26: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1
+      41: astore        5
+      43: iconst_0
+      44: istore        6
+      46: aload         4
+      48: ldc           #51                 // int 1050935510
+      50: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      55: aload         4
+      57: ldc           #53                 // String C:BinaryProbes.kt#ixohzb
+      59: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      62: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      65: ifeq          77
+      68: ldc           #51                 // int 1050935510
+      70: iload_3
+      71: iconst_m1
+      72: ldc           #55                 // String com.alexcawl.contract.playground.styling.Contract1BinaryProbe.factoryFull.<anonymous> (BinaryProbes.kt:18)
+      74: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      77: bipush        10
+      79: istore        7
+      81: iconst_0
+      82: istore        8
+      84: iload         7
+      86: i2f
+      87: invokestatic  #61                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      90: fstore        9
+      92: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      95: ifeq          101
+      98: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     101: aload         4
+     103: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     108: fload         9
+     110: fstore        5
+     112: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     115: ifeq          121
+     118: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     121: aload_1
+     122: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     127: fload         5
+     129: freturn
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_1
+       1: ldc           #79                 // int -1765685673
+       3: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #81                 // String C(shape):Contract1.kt#4g3aoj
+      11: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #79                 // int -1765685673
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #83                 // String com.alexcawl.contract.playground.component.v1.Contract1.<no name provided>.shape (Contract1.kt:30)
+      26: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: getfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+      33: ifnull        82
+      36: aload_1
+      37: ldc           #84                 // int -311848349
+      39: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      44: aload_1
+      45: ldc           #86                 // String 30@916L12
+      47: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      50: aload_0
+      51: getfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+      54: aload_0
+      55: aload_1
+      56: bipush        14
+      58: iload_2
+      59: iand
+      60: invokestatic  #92                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      63: invokeinterface #98,  4           // InterfaceMethod kotlin/jvm/functions/Function3.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      68: checkcast     #100                // class androidx/compose/ui/graphics/Shape
+      71: astore_3
+      72: aload_1
+      73: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+      78: aload_3
+      79: goto          113
+      82: aload_1
+      83: ldc           #101                // int -311847586
+      85: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      90: aload_1
+      91: ldc           #103                // String 30@940L7
+      93: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      96: aload_0
+      97: aload_1
+      98: bipush        14
+     100: iload_2
+     101: iand
+     102: invokespecial #105                // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1.shape:(Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+     105: astore_3
+     106: aload_1
+     107: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     112: aload_3
+     113: astore        4
+     115: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     118: ifeq          124
+     121: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     124: aload_1
+     125: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     130: aload         4
+     132: areturn
+}
+Compiled from "BinaryProbes.kt"
+public final class com.alexcawl.contract.playground.styling.Contract2BinaryProbe {
+  public static final com.alexcawl.contract.playground.styling.Contract2BinaryProbe INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/Contract2BinaryProbe;
+
+  public static final int $stable;
+    descriptor: I
+
+  private com.alexcawl.contract.playground.styling.Contract2BinaryProbe();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 factoryDefault();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2;
+    Code:
+       0: invokedynamic #32,  0             // InvokeDynamic #0:invoke:()Lkotlin/jvm/functions/Function1;
+       5: aconst_null
+       6: iconst_2
+       7: aconst_null
+       8: invokestatic  #38                 // Method com/alexcawl/contract/playground/component/v2/Contract2Kt.Contract2$default:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+      11: areturn
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 factoryFull();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2;
+    Code:
+       0: invokedynamic #44,  0             // InvokeDynamic #1:invoke:()Lkotlin/jvm/functions/Function1;
+       5: invokedynamic #51,  0             // InvokeDynamic #2:invoke:()Lkotlin/jvm/functions/Function1;
+      10: invokestatic  #55                 // Method com/alexcawl/contract/playground/component/v2/Contract2Kt.Contract2:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+      13: areturn
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 copyDefault(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+    Code:
+       0: aload_1
+       1: ldc           #59                 // String source
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: invokedynamic #70,  0             // InvokeDynamic #3:invoke:()Lkotlin/jvm/functions/Function1;
+      12: aconst_null
+      13: iconst_2
+      14: aconst_null
+      15: invokestatic  #74                 // Method com/alexcawl/contract/playground/component/v2/Contract2Kt.copy$default:(Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+      18: areturn
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 copyFull(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+    Code:
+       0: aload_1
+       1: ldc           #59                 // String source
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: invokedynamic #81,  0             // InvokeDynamic #4:invoke:()Lkotlin/jvm/functions/Function1;
+      12: invokedynamic #86,  0             // InvokeDynamic #5:invoke:()Lkotlin/jvm/functions/Function1;
+      17: invokestatic  #90                 // Method com/alexcawl/contract/playground/component/v2/Contract2Kt.copy:(Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+      20: areturn
+
+  private static final androidx.compose.ui.unit.Dp factoryDefault$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+    Code:
+       0: aload_0
+       1: ldc           #92                 // String $this$Contract2
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: bipush        10
+       8: istore_1
+       9: iconst_0
+      10: istore_2
+      11: iload_1
+      12: i2f
+      13: invokestatic  #98                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      16: invokestatic  #102                // Method androidx/compose/ui/unit/Dp."box-impl":(F)Landroidx/compose/ui/unit/Dp;
+      19: areturn
+
+  private static final androidx.compose.ui.unit.Dp factoryFull$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+    Code:
+       0: aload_0
+       1: ldc           #92                 // String $this$Contract2
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: bipush        10
+       8: istore_1
+       9: iconst_0
+      10: istore_2
+      11: iload_1
+      12: i2f
+      13: invokestatic  #98                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      16: invokestatic  #102                // Method androidx/compose/ui/unit/Dp."box-impl":(F)Landroidx/compose/ui/unit/Dp;
+      19: areturn
+
+  private static final androidx.compose.ui.graphics.Shape factoryFull$lambda$1(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_0
+       1: ldc           #92                 // String $this$Contract2
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: invokeinterface #111,  1          // InterfaceMethod com/alexcawl/contract/playground/component/v2/Contract2."cornerSize-D9Ej5fM":()F
+      12: invokestatic  #117                // Method androidx/compose/foundation/shape/RoundedCornerShapeKt."RoundedCornerShape-0680j_4":(F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+      15: checkcast     #119                // class androidx/compose/ui/graphics/Shape
+      18: areturn
+
+  private static final androidx.compose.ui.unit.Dp copyDefault$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+    Code:
+       0: aload_0
+       1: ldc           #121                // String $this$copy
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: bipush        20
+       8: istore_1
+       9: iconst_0
+      10: istore_2
+      11: iload_1
+      12: i2f
+      13: invokestatic  #98                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      16: invokestatic  #102                // Method androidx/compose/ui/unit/Dp."box-impl":(F)Landroidx/compose/ui/unit/Dp;
+      19: areturn
+
+  private static final androidx.compose.ui.unit.Dp copyFull$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+    Code:
+       0: aload_0
+       1: ldc           #121                // String $this$copy
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: bipush        20
+       8: istore_1
+       9: iconst_0
+      10: istore_2
+      11: iload_1
+      12: i2f
+      13: invokestatic  #98                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      16: invokestatic  #102                // Method androidx/compose/ui/unit/Dp."box-impl":(F)Landroidx/compose/ui/unit/Dp;
+      19: areturn
+
+  private static final androidx.compose.ui.graphics.Shape copyFull$lambda$1(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_0
+       1: ldc           #121                // String $this$copy
+       3: invokestatic  #65                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: invokeinterface #111,  1          // InterfaceMethod com/alexcawl/contract/playground/component/v2/Contract2."cornerSize-D9Ej5fM":()F
+      12: invokestatic  #117                // Method androidx/compose/foundation/shape/RoundedCornerShapeKt."RoundedCornerShape-0680j_4":(F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+      15: checkcast     #119                // class androidx/compose/ui/graphics/Shape
+      18: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class com/alexcawl/contract/playground/styling/Contract2BinaryProbe
+       3: dup
+       4: invokespecial #123                // Method "<init>":()V
+       7: putstatic     #126                // Field INSTANCE:Lcom/alexcawl/contract/playground/styling/Contract2BinaryProbe;
+      10: return
+}
+Compiled from "BinaryProbes.kt"
+public final class com.alexcawl.contract.playground.styling.FunctionBinaryProbe {
+  public static final com.alexcawl.contract.playground.styling.FunctionBinaryProbe INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/FunctionBinaryProbe;
+
+  public static final int $stable;
+    descriptor: I
+
+  private com.alexcawl.contract.playground.styling.FunctionBinaryProbe();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final java.lang.String jvmOverloadsDefault();
+    descriptor: ()Ljava/lang/String;
+    Code:
+       0: ldc           #15                 // String value
+       2: aconst_null
+       3: iconst_2
+       4: aconst_null
+       5: invokestatic  #21                 // Method com/alexcawl/contract/playground/component/VersionedFunctionsKt.withJvmOverloads$default:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+       8: areturn
+
+  public final java.lang.String jvmOverloadsFull();
+    descriptor: ()Ljava/lang/String;
+    Code:
+       0: ldc           #15                 // String value
+       2: ldc           #24                 // String :explicit
+       4: invokestatic  #28                 // Method com/alexcawl/contract/playground/component/VersionedFunctionsKt.withJvmOverloads:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       7: areturn
+
+  public final java.lang.String introducedAtDefault();
+    descriptor: ()Ljava/lang/String;
+    Code:
+       0: ldc           #15                 // String value
+       2: aconst_null
+       3: iconst_2
+       4: aconst_null
+       5: invokestatic  #32                 // Method com/alexcawl/contract/playground/component/VersionedFunctionsKt.withIntroducedAt$default:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+       8: areturn
+
+  public final java.lang.String introducedAtFull();
+    descriptor: ()Ljava/lang/String;
+    Code:
+       0: ldc           #15                 // String value
+       2: ldc           #24                 // String :explicit
+       4: invokestatic  #36                 // Method com/alexcawl/contract/playground/component/VersionedFunctionsKt.withIntroducedAt:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       7: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class com/alexcawl/contract/playground/styling/FunctionBinaryProbe
+       3: dup
+       4: invokespecial #38                 // Method "<init>":()V
+       7: putstatic     #41                 // Field INSTANCE:Lcom/alexcawl/contract/playground/styling/FunctionBinaryProbe;
+      10: return
+}
+Compiled from "Contract1Presets.kt"
+public final class com.alexcawl.contract.playground.styling.v1.Contract1Presets {
+  public static final com.alexcawl.contract.playground.styling.v1.Contract1Presets INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/v1/Contract1Presets;
+
+  public static final int $stable;
+    descriptor: I
+
+  private com.alexcawl.contract.playground.styling.v1.Contract1Presets();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 getDefault(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+    Code:
+       0: aload_1
+       1: ldc           #18                 // int -1167236560
+       3: ldc           #20                 // String C(<get-default>)10@325L97:Contract1Presets.kt#hvj7lq
+       5: invokestatic  #26                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart:(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+       8: invokestatic  #30                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      11: ifeq          23
+      14: ldc           #18                 // int -1167236560
+      16: iload_2
+      17: iconst_m1
+      18: ldc           #32                 // String com.alexcawl.contract.playground.styling.v1.Contract1Presets.<get-default> (Contract1Presets.kt:10)
+      20: invokestatic  #36                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      23: aload_1
+      24: ldc           #37                 // int -727868911
+      26: ldc           #39                 // String CC(remember):Contract1Presets.kt#9igjgp
+      28: invokestatic  #26                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart:(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+      31: aload_1
+      32: astore        5
+      34: iconst_0
+      35: istore        6
+      37: iconst_0
+      38: istore        7
+      40: aload         5
+      42: invokeinterface #45,  1           // InterfaceMethod androidx/compose/runtime/Composer.rememberedValue:()Ljava/lang/Object;
+      47: astore        8
+      49: iconst_0
+      50: istore        9
+      52: aload         8
+      54: getstatic     #49                 // Field androidx/compose/runtime/Composer.Companion:Landroidx/compose/runtime/Composer$Companion;
+      57: invokevirtual #54                 // Method androidx/compose/runtime/Composer$Companion.getEmpty:()Ljava/lang/Object;
+      60: if_acmpne     103
+      63: iconst_0
+      64: istore        10
+      66: nop
+      67: aconst_null
+      68: astore        11
+      70: iconst_0
+      71: istore        12
+      73: new           #56                 // class com/alexcawl/contract/playground/styling/v1/Contract1Presets$_get_default_$lambda$0$$inlined$Contract1$default$1
+      76: dup
+      77: aload         11
+      79: invokespecial #59                 // Method com/alexcawl/contract/playground/styling/v1/Contract1Presets$_get_default_$lambda$0$$inlined$Contract1$default$1."<init>":(Lkotlin/jvm/functions/Function3;)V
+      82: checkcast     #61                 // class com/alexcawl/contract/playground/component/v1/Contract1
+      85: nop
+      86: nop
+      87: astore        10
+      89: aload         5
+      91: aload         10
+      93: invokeinterface #65,  2           // InterfaceMethod androidx/compose/runtime/Composer.updateRememberedValue:(Ljava/lang/Object;)V
+      98: aload         10
+     100: goto          105
+     103: aload         8
+     105: nop
+     106: nop
+     107: checkcast     #61                 // class com/alexcawl/contract/playground/component/v1/Contract1
+     110: astore        4
+     112: aload_1
+     113: invokestatic  #69                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd:(Landroidx/compose/runtime/Composer;)V
+     116: aload         4
+     118: astore_3
+     119: invokestatic  #30                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     122: ifeq          128
+     125: invokestatic  #72                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     128: aload_1
+     129: invokestatic  #69                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd:(Landroidx/compose/runtime/Composer;)V
+     132: aload_3
+     133: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class com/alexcawl/contract/playground/styling/v1/Contract1Presets
+       3: dup
+       4: invokespecial #90                 // Method "<init>":()V
+       7: putstatic     #93                 // Field INSTANCE:Lcom/alexcawl/contract/playground/styling/v1/Contract1Presets;
+      10: return
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.v1.Contract1Presets$_get_default_$lambda$0$$inlined$Contract1$default$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+
+  public com.alexcawl.contract.playground.styling.v1.Contract1Presets$_get_default_$lambda$0$$inlined$Contract1$default$1(kotlin.jvm.functions.Function3);
+    descriptor: (Lkotlin/jvm/functions/Function3;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+       5: aload_0
+       6: invokespecial #20                 // Method com/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode."<init>":()V
+       9: return
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+    Code:
+       0: aload_1
+       1: ldc           #26                 // int -555822509
+       3: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #34                 // String C(cornerSize)27@827L12:Contract1.kt#4g3aoj
+      11: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #26                 // int -555822509
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #46                 // String com.alexcawl.contract.playground.component.v1.Contract1.<no name provided>.cornerSize (Contract1.kt:27)
+      26: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: aload_1
+      31: bipush        14
+      33: iload_2
+      34: iand
+      35: istore_3
+      36: astore        4
+      38: checkcast     #6                  // class com/alexcawl/contract/playground/component/v1/Contract1
+      41: astore        5
+      43: iconst_0
+      44: istore        6
+      46: aload         4
+      48: ldc           #51                 // int -169283374
+      50: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      55: aload         4
+      57: ldc           #53                 // String C:Contract1Presets.kt#hvj7lq
+      59: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      62: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      65: ifeq          77
+      68: ldc           #51                 // int -169283374
+      70: iload_3
+      71: iconst_m1
+      72: ldc           #55                 // String com.alexcawl.contract.playground.styling.v1.Contract1Presets.<get-default>.<anonymous>.<anonymous> (Contract1Presets.kt:12)
+      74: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      77: bipush        12
+      79: istore        7
+      81: iconst_0
+      82: istore        8
+      84: iload         7
+      86: i2f
+      87: invokestatic  #61                 // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      90: fstore        9
+      92: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      95: ifeq          101
+      98: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     101: aload         4
+     103: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     108: fload         9
+     110: fstore        5
+     112: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     115: ifeq          121
+     118: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     121: aload_1
+     122: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     127: fload         5
+     129: freturn
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+    Code:
+       0: aload_1
+       1: ldc           #79                 // int -1765685673
+       3: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+       8: aload_1
+       9: ldc           #81                 // String C(shape):Contract1.kt#4g3aoj
+      11: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      14: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      17: ifeq          29
+      20: ldc           #79                 // int -1765685673
+      22: iload_2
+      23: iconst_m1
+      24: ldc           #83                 // String com.alexcawl.contract.playground.component.v1.Contract1.<no name provided>.shape (Contract1.kt:30)
+      26: invokestatic  #50                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      29: aload_0
+      30: getfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+      33: ifnull        82
+      36: aload_1
+      37: ldc           #84                 // int -311848349
+      39: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      44: aload_1
+      45: ldc           #86                 // String 30@916L12
+      47: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      50: aload_0
+      51: getfield      #17                 // Field $shape:Lkotlin/jvm/functions/Function3;
+      54: aload_0
+      55: aload_1
+      56: bipush        14
+      58: iload_2
+      59: iand
+      60: invokestatic  #92                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      63: invokeinterface #98,  4           // InterfaceMethod kotlin/jvm/functions/Function3.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      68: checkcast     #100                // class androidx/compose/ui/graphics/Shape
+      71: astore_3
+      72: aload_1
+      73: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+      78: aload_3
+      79: goto          113
+      82: aload_1
+      83: ldc           #101                // int -311847586
+      85: invokeinterface #32,  2           // InterfaceMethod androidx/compose/runtime/Composer.startReplaceGroup:(I)V
+      90: aload_1
+      91: ldc           #103                // String 30@940L7
+      93: invokestatic  #40                 // Method androidx/compose/runtime/ComposerKt.sourceInformation:(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+      96: aload_0
+      97: aload_1
+      98: bipush        14
+     100: iload_2
+     101: iand
+     102: invokespecial #105                // InterfaceMethod com/alexcawl/contract/playground/component/v1/Contract1.shape:(Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+     105: astore_3
+     106: aload_1
+     107: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     112: aload_3
+     113: astore        4
+     115: invokestatic  #44                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     118: ifeq          124
+     121: invokestatic  #64                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     124: aload_1
+     125: invokeinterface #67,  1           // InterfaceMethod androidx/compose/runtime/Composer.endReplaceGroup:()V
+     130: aload         4
+     132: areturn
+}
+Compiled from "Contract2Presets.kt"
+public final class com.alexcawl.contract.playground.styling.v2.Contract2Presets {
+  public static final com.alexcawl.contract.playground.styling.v2.Contract2Presets INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/v2/Contract2Presets;
+
+  public static final int $stable;
+    descriptor: I
+
+  private com.alexcawl.contract.playground.styling.v2.Contract2Presets();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 getDefault(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+    Code:
+       0: aload_1
+       1: ldc           #18                 // int -451031022
+       3: ldc           #20                 // String C(<get-default>)11@355L113:Contract2Presets.kt#hvj7lp
+       5: invokestatic  #26                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart:(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+       8: invokestatic  #30                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+      11: ifeq          23
+      14: ldc           #18                 // int -451031022
+      16: iload_2
+      17: iconst_m1
+      18: ldc           #32                 // String com.alexcawl.contract.playground.styling.v2.Contract2Presets.<get-default> (Contract2Presets.kt:10)
+      20: invokestatic  #36                 // Method androidx/compose/runtime/ComposerKt.traceEventStart:(IIILjava/lang/String;)V
+      23: aload_1
+      24: ldc           #37                 // int 350886723
+      26: ldc           #39                 // String CC(remember):Contract2Presets.kt#9igjgp
+      28: invokestatic  #26                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart:(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+      31: aload_1
+      32: astore        5
+      34: iconst_0
+      35: istore        6
+      37: iconst_0
+      38: istore        7
+      40: aload         5
+      42: invokeinterface #45,  1           // InterfaceMethod androidx/compose/runtime/Composer.rememberedValue:()Ljava/lang/Object;
+      47: astore        8
+      49: iconst_0
+      50: istore        9
+      52: aload         8
+      54: getstatic     #49                 // Field androidx/compose/runtime/Composer.Companion:Landroidx/compose/runtime/Composer$Companion;
+      57: invokevirtual #54                 // Method androidx/compose/runtime/Composer$Companion.getEmpty:()Ljava/lang/Object;
+      60: if_acmpne     94
+      63: iconst_0
+      64: istore        10
+      66: invokedynamic #73,  0             // InvokeDynamic #0:invoke:()Lkotlin/jvm/functions/Function1;
+      71: aconst_null
+      72: iconst_2
+      73: aconst_null
+      74: invokestatic  #79                 // Method com/alexcawl/contract/playground/component/v2/Contract2Kt.Contract2$default:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+      77: nop
+      78: astore        10
+      80: aload         5
+      82: aload         10
+      84: invokeinterface #83,  2           // InterfaceMethod androidx/compose/runtime/Composer.updateRememberedValue:(Ljava/lang/Object;)V
+      89: aload         10
+      91: goto          96
+      94: aload         8
+      96: nop
+      97: nop
+      98: checkcast     #85                 // class com/alexcawl/contract/playground/component/v2/Contract2
+     101: astore        4
+     103: aload_1
+     104: invokestatic  #89                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd:(Landroidx/compose/runtime/Composer;)V
+     107: aload         4
+     109: astore_3
+     110: invokestatic  #30                 // Method androidx/compose/runtime/ComposerKt.isTraceInProgress:()Z
+     113: ifeq          119
+     116: invokestatic  #92                 // Method androidx/compose/runtime/ComposerKt.traceEventEnd:()V
+     119: aload_1
+     120: invokestatic  #89                 // Method androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd:(Landroidx/compose/runtime/Composer;)V
+     123: aload_3
+     124: areturn
+
+  private static final androidx.compose.ui.unit.Dp _get_default_$lambda$0$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+    Code:
+       0: aload_0
+       1: ldc           #107                // String $this$Contract2
+       3: invokestatic  #113                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: bipush        12
+       8: istore_1
+       9: iconst_0
+      10: istore_2
+      11: iload_1
+      12: i2f
+      13: invokestatic  #119                // Method androidx/compose/ui/unit/Dp."constructor-impl":(F)F
+      16: invokestatic  #123                // Method androidx/compose/ui/unit/Dp."box-impl":(F)Landroidx/compose/ui/unit/Dp;
+      19: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class com/alexcawl/contract/playground/styling/v2/Contract2Presets
+       3: dup
+       4: invokespecial #128                // Method "<init>":()V
+       7: putstatic     #131                // Field INSTANCE:Lcom/alexcawl/contract/playground/styling/v2/Contract2Presets;
+      10: return
+}

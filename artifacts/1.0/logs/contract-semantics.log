@@ -1,0 +1,43 @@
+Calculating task graph as no cached configuration is available for tasks: :component:testDebugUnitTest
+> Task :component:preBuild UP-TO-DATE
+> Task :component:preDebugBuild UP-TO-DATE
+> Task :component:generateDebugResources UP-TO-DATE
+> Task :component:packageDebugResources UP-TO-DATE
+> Task :component:processDebugNavigationResources UP-TO-DATE
+> Task :component:parseDebugLocalResources UP-TO-DATE
+> Task :component:generateDebugRFile UP-TO-DATE
+> Task :component:compileDebugKotlin UP-TO-DATE
+> Task :component:javaPreCompileDebug UP-TO-DATE
+> Task :component:compileDebugJavaWithJavac NO-SOURCE
+> Task :component:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :component:bundleLibCompileToJarDebug
+> Task :component:preDebugUnitTestBuild UP-TO-DATE
+> Task :component:generateDebugUnitTestStubRFile
+> Task :component:compileDebugUnitTestKotlin
+> Task :component:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :component:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :component:processDebugJavaRes UP-TO-DATE
+> Task :component:processDebugUnitTestJavaRes
+
+> Task :component:testDebugUnitTest FAILED
+
+Contract2Test > isDelegated FAILED
+    java.lang.AssertionError at Contract2Test.kt:17
+
+Contract1Test > isRebinding FAILED
+    java.lang.AssertionError at Contract1Test.kt:50
+
+4 tests completed, 2 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':component:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///Users/mikhail/Developer/contract-plugin-playground/component/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 1s
+15 actionable tasks: 5 executed, 1 from cache, 9 up-to-date
+Configuration cache entry stored.

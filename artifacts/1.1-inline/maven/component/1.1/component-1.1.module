@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.alexcawl.contract.playground",
+    "module": "component",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.02.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "component-1.1.aar",
+          "url": "component-1.1.aar",
+          "size": 38695,
+          "sha512": "bc22292c131667d7cd86d09ee80798f523e583226ba74bfbf0f5898bc75dfab12cea88d659ad0c4761e06ed0d290ad7a73066b9e90c2d22c2c263de40b063fe7",
+          "sha256": "1096f133d2201437e98c33d7d5d747a5a85e3dc107aaf71aa06276af9b76d1d6",
+          "sha1": "6ed607346d0dcfb97b8c9b3c4c90d9109427a72f",
+          "md5": "e1a20aff1b3bf5e2937890be416cd08e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.02.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "component-1.1.aar",
+          "url": "component-1.1.aar",
+          "size": 38695,
+          "sha512": "bc22292c131667d7cd86d09ee80798f523e583226ba74bfbf0f5898bc75dfab12cea88d659ad0c4761e06ed0d290ad7a73066b9e90c2d22c2c263de40b063fe7",
+          "sha256": "1096f133d2201437e98c33d7d5d747a5a85e3dc107aaf71aa06276af9b76d1d6",
+          "sha1": "6ed607346d0dcfb97b8c9b3c4c90d9109427a72f",
+          "md5": "e1a20aff1b3bf5e2937890be416cd08e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "component-1.1-sources.jar",
+          "url": "component-1.1-sources.jar",
+          "size": 5190,
+          "sha512": "0c91187bc2e5f6f7d4eb2e7ac52ad861fac8f23e8f32306850910a26c44a76447f4207074725af1eab54ec048c3e8c80f6c06d7b772a9b71bef050a965ee06c0",
+          "sha256": "13c9ef4ed7ec023b64b8f25828e0974ec565b1e994e0e862aa865f021240fc7f",
+          "sha1": "caaf45124be094af006e1021343f54c441dbdf55",
+          "md5": "47cd1c81149b194570f377f753b4c466"
+        }
+      ]
+    }
+  ]
+}

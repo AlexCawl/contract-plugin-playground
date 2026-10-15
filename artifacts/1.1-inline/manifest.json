@@ -1,0 +1,180 @@
+{
+  "component": "com.alexcawl.contract.playground:component:1.1",
+  "styling": "com.alexcawl.contract.playground:styling:1.0",
+  "styling_aar_sha256": "6003580559c8897b084a171a1c4aaa9678282959a3291948e9b7b1a665d878cd",
+  "styling_republished": false,
+  "source_commit": "1d714e6ac21ca34b430a28c42961f5a3431d014e",
+  "commands": [
+    {
+      "command": [
+        "/Users/mikhail/Developer/contract-plugin-playground/gradlew",
+        "--version",
+        "--max-workers=1",
+        "--console=plain"
+      ],
+      "exit_code": 0,
+      "log": "logs/environment.log"
+    },
+    {
+      "command": [
+        "/Users/mikhail/Developer/contract-plugin-playground/gradlew",
+        ":component:publishReleasePublicationToMavenLocal",
+        ":component:lintDebug",
+        "--max-workers=1",
+        "--console=plain"
+      ],
+      "exit_code": 0,
+      "log": "logs/publish-component.log"
+    },
+    {
+      "command": [
+        "/Users/mikhail/Developer/contract-plugin-playground/gradlew",
+        ":app:dependencies",
+        "--configuration",
+        "debugRuntimeClasspath",
+        "--max-workers=1",
+        "--console=plain"
+      ],
+      "exit_code": 0,
+      "log": "logs/dependencies.log"
+    },
+    {
+      "command": [
+        "/Users/mikhail/Developer/contract-plugin-playground/gradlew",
+        ":app:dependencyInsight",
+        "--dependency",
+        "com.alexcawl.contract.playground:component",
+        "--configuration",
+        "debugRuntimeClasspath",
+        "--max-workers=1",
+        "--console=plain"
+      ],
+      "exit_code": 0,
+      "log": "logs/component-resolution.log"
+    },
+    {
+      "command": [
+        "/Users/mikhail/Developer/contract-plugin-playground/gradlew",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug",
+        ":app:lintDebug",
+        "--continue",
+        "--max-workers=1",
+        "--console=plain"
+      ],
+      "exit_code": 1,
+      "log": "logs/app-verification.log"
+    },
+    {
+      "command": [
+        "/Users/mikhail/Developer/contract-plugin-playground/gradlew",
+        ":component:testDebugUnitTest",
+        "--continue",
+        "--max-workers=1",
+        "--console=plain"
+      ],
+      "exit_code": 1,
+      "log": "logs/contract-semantics.log"
+    }
+  ],
+  "app_tests": [
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v1FactoryDefault",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "introducedAtDefault",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v1FactoryFull",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v2FactoryFull",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v1CopyFull",
+      "status": "failed",
+      "failure_type": "java.lang.AssertionError"
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v2FactoryDefault",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "jvmOverloadsFull",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v1CopyDefault",
+      "status": "failed",
+      "failure_type": "java.lang.AssertionError"
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v2CopyDefault",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "jvmOverloadsDefault",
+      "status": "failed",
+      "failure_type": "java.lang.NoSuchMethodError"
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "introducedAtFull",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.app.BinaryCompatibilityTest",
+      "name": "v2CopyFull",
+      "status": "passed",
+      "failure_type": null
+    }
+  ],
+  "contract_semantics_tests": [
+    {
+      "class": "com.alexcawl.contract.playground.component.v1.Contract1Test",
+      "name": "isDelegated",
+      "status": "passed",
+      "failure_type": null
+    },
+    {
+      "class": "com.alexcawl.contract.playground.component.v1.Contract1Test",
+      "name": "isRebinding",
+      "status": "failed",
+      "failure_type": "java.lang.AssertionError"
+    },
+    {
+      "class": "com.alexcawl.contract.playground.component.v2.Contract2Test",
+      "name": "isDelegated",
+      "status": "failed",
+      "failure_type": "java.lang.AssertionError"
+    },
+    {
+      "class": "com.alexcawl.contract.playground.component.v2.Contract2Test",
+      "name": "isRebinding",
+      "status": "passed",
+      "failure_type": null
+    }
+  ]
+}

@@ -1,5 +1,14 @@
 # Contract Plugin Playground
 
+Documentation and original evidence are kept on `main`. The Maven Local experiment
+lives on `codex/contract-1.0` and `codex/contract-1.1`; the application below is the initial playground.
+
+- [Contracts V1 and V2](docs/CONTRACTS_REPORT.md)
+- [JVM default arguments and version overloads](docs/JVM_DEFAULT_ARGUMENTS.md)
+- [Binary compatibility experiment](docs/BINARY_COMPATIBILITY.md)
+- [Frozen and rebuilt Styling probes](docs/PROBE_RECOMPILATION.md)
+- [Original Kotlin/JVM signatures](docs/API_SIGNATURES.md)
+
 A minimal Android Compose app that uses contracts across three Android modules:
 
 - `component`: `Contract1`, `Contract2`, and independent `ContractButton1`/`ContractButton2` composables.

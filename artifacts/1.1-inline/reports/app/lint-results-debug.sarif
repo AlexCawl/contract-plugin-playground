@@ -1,0 +1,484 @@
+{
+    "$schema" : "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+    "version" : "2.1.0",
+    "runs" : [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Android Lint",
+                    "fullName": "Android Lint (in gradle)",
+                    "version": "9.4.1",
+                    "semanticVersion": "9.4.1",
+                    "organization": "Google",
+                    "informationUri": "https://developer.android.com/studio/write/lint",
+                    "fullDescription": {
+                        "text": "Static analysis originally for Android source code but now performing general analysis"
+                    },
+                    "language": "en-US",
+                    "rules": [
+                        {
+                            "id": "DataExtractionRules",
+                            "shortDescription": {
+                                "text": "Missing data extraction rules"
+                            },
+                            "fullDescription": {
+                                "text": "Before Android 12, the attributes android:allowBackup and android:fullBackupContent were used to configure all forms of backup, including cloud backups, device-to-device transfers and adb backup.\n\nIn Android 12 and higher, these attributes have been deprecated and will only apply to cloud backups. You should instead use the attribute android:dataExtractionRules, specifying an @xml resource that configures which files to back up, for cloud backups and for device-to-device transfers, separately. If your minSdkVersion supports older versions, you'll still want to specify an android:fullBackupContent resource if the default behavior is not right for your app.",
+                                "markdown": "Before Android 12, the attributes `android:allowBackup` and `android:fullBackupContent` were used to configure all forms of backup, including cloud backups, device-to-device transfers and adb backup.\n\nIn Android 12 and higher, these attributes have been deprecated and will only apply to cloud backups. You should instead use the attribute `android:dataExtractionRules`, specifying an `@xml` resource that configures which files to back up, for cloud backups and for device-to-device transfers, separately. If your `minSdkVersion` supports older versions, you'll still want to specify an `android:fullBackupContent` resource if the default behavior is not right for your app."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Security"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GradleDependency",
+                            "shortDescription": {
+                                "text": "Obsolete Gradle Dependency"
+                            },
+                            "fullDescription": {
+                                "text": "This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MissingApplicationIcon",
+                            "shortDescription": {
+                                "text": "Missing application icon"
+                            },
+                            "fullDescription": {
+                                "text": "You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example @drawable/icon).",
+                                "markdown": "You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example `@drawable/icon`)."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 60
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Icons",
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "OldTargetApi",
+                            "shortDescription": {
+                                "text": "Target SDK attribute is not targeting latest version"
+                            },
+                            "fullDescription": {
+                                "text": "When your application or sdk runs on a version of Android that is more recent than your targetSdk specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the targetSdk is less than 14, your app may get an option button in the UI.\n\nTo fix this issue, set the targetSdk to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:\nhttps://developer.android.com/distribute/best-practices/develop/target-sdk.html",
+                                "markdown": "When your application or sdk runs on a version of Android that is more recent than your `targetSdk` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdk` is less than 14, your app may get an option button in the UI.\n\nTo fix this issue, set the `targetSdk` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:\nhttps://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "UseTomlInstead",
+                            "shortDescription": {
+                                "text": "Use TOML Version Catalog Instead"
+                            },
+                            "fullDescription": {
+                                "text": "If your project is using a libs.versions.toml file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically).",
+                                "markdown": "If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Productivity"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "originalUriBaseIds": {
+                "%SRCROOT%": {
+                    "uri": "file:///Users/mikhail/Developer/contract-plugin-playground/"
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "OldTargetApi",
+                    "ruleIndex": 3,
+                    "message": {
+                        "text": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.",
+                        "markdown": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 14,
+                                    "startColumn": 9,
+                                    "endLine": 14,
+                                    "endColumn": 23,
+                                    "charOffset": 326,
+                                    "charLength": 14,
+                                    "snippet": {
+                                        "text": "targetSdk = 36"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 12,
+                                    "endLine": 17,
+                                    "snippet": {
+                                        "text": "        applicationId = \"com.alexcawl.contract.playground.app\"\n        minSdk = 23\n        targetSdk = 36\n        versionCode = 1\n        versionName = \"1.0\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Update targetSdkVersion to 37"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 14,
+                                                "startColumn": 21,
+                                                "charOffset": 338,
+                                                "endLine": 14,
+                                                "endColumn": 23,
+                                                "charLength": 2
+                                            },
+                                            "insertedContent": {
+                                                "text": "37\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "101593edfe0919c2"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "A newer version of compileSdk than 36 is available: 37",
+                        "markdown": "A newer version of `compileSdk` than 36 is available: 37"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 8,
+                                    "startColumn": 5,
+                                    "endLine": 8,
+                                    "endColumn": 20,
+                                    "charOffset": 165,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "compileSdk = 36"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 6,
+                                    "endLine": 11,
+                                    "snippet": {
+                                        "text": "android {\n    namespace = \"com.alexcawl.contract.playground.app\"\n    compileSdk = 36\n    buildToolsVersion = \"36.0.0\"\n\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Set compileSdk to 37"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 8,
+                                                "startColumn": 18,
+                                                "charOffset": 178,
+                                                "endLine": 8,
+                                                "endColumn": 20,
+                                                "charLength": 2
+                                            },
+                                            "insertedContent": {
+                                                "text": "37\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "8858a48600d6e51e"
+                    }
+                },
+                {
+                    "ruleId": "DataExtractionRules",
+                    "ruleIndex": 0,
+                    "message": {
+                        "text": "The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher.",
+                        "markdown": "The attribute `android:allowBackup` is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute `android:dataExtractionRules` specifying an `@xml` resource which configures cloud backups and device transfers on Android 12 and higher."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/AndroidManifest.xml"
+                                },
+                                "region": {
+                                    "startLine": 4,
+                                    "startColumn": 30,
+                                    "endLine": 4,
+                                    "endColumn": 35,
+                                    "charOffset": 155,
+                                    "charLength": 5,
+                                    "snippet": {
+                                        "text": "false"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 2,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <application\n        android:allowBackup=\"false\"\n        android:label=\"@string/app_name\"\n        android:supportsRtl=\"true\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Create data_extraction_rules.xml"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/xml/data_extraction_rules.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 1,
+                                                "startColumn": 1,
+                                                "charOffset": 0
+                                            },
+                                            "insertedContent": {
+                                                "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!--\n   Sample data extraction rules file; uncomment and customize as necessary.\n   See https://developer.android.com/about/versions/12/backup-restore#xml-changes\n   for details.\n-->\n<data-extraction-rules>\n    <cloud-backup>\n        <!--\n        TODO: Use <include> and <exclude> to control what is backed up.\n        The domain can be file, database, sharedpref, external or root.\n        Examples:\n\n        <include domain=\"file\" path=\"file_to_include\"/>\n        <exclude domain=\"file\" path=\"file_to_exclude\"/>\n        <include domain=\"file\" path=\"include_folder\"/>\n        <exclude domain=\"file\" path=\"include_folder/file_to_exclude\"/>\n        <exclude domain=\"file\" path=\"exclude_folder\"/>\n        <include domain=\"file\" path=\"exclude_folder/file_to_include\"/>\n\n        <include domain=\"sharedpref\" path=\"include_shared_pref1.xml\"/>\n        <include domain=\"database\" path=\"db_name/file_to_include\"/>\n        <exclude domain=\"database\" path=\"db_name/include_folder/file_to_exclude\"/>\n        <include domain=\"external\" path=\"file_to_include\"/>\n        <exclude domain=\"external\" path=\"file_to_exclude\"/>\n        <include domain=\"root\" path=\"file_to_include\"/>\n        <exclude domain=\"root\" path=\"file_to_exclude\"/>\n        -->\n    </cloud-backup>\n    <!--\n    <device-transfer>\n        <include .../>\n        <exclude .../>\n    </device-transfer>\n    -->\n</data-extraction-rules>\n"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/AndroidManifest.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 9,
+                                                "charOffset": 170
+                                            },
+                                            "insertedContent": {
+                                                "text": "android:dataExtractionRules=\"@xml/data_extraction_rules\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "a32963ec975c4db2"
+                    }
+                },
+                {
+                    "ruleId": "MissingApplicationIcon",
+                    "ruleIndex": 2,
+                    "message": {
+                        "text": "Should explicitly set android:icon, there is no default",
+                        "markdown": "Should explicitly set `android:icon`, there is no default"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/AndroidManifest.xml"
+                                },
+                                "region": {
+                                    "startLine": 3,
+                                    "startColumn": 6,
+                                    "endLine": 3,
+                                    "endColumn": 17,
+                                    "charOffset": 114,
+                                    "charLength": 11,
+                                    "snippet": {
+                                        "text": "application"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 6,
+                                    "snippet": {
+                                        "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <application\n        android:allowBackup=\"false\"\n        android:label=\"@string/app_name\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Set icon"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/AndroidManifest.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 9,
+                                                "charOffset": 170
+                                            },
+                                            "insertedContent": {
+                                                "text": "android:icon=\"@mipmap/\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "788f4d74aa7283fd"
+                    }
+                },
+                {
+                    "ruleId": "UseTomlInstead",
+                    "ruleIndex": 4,
+                    "message": {
+                        "text": "Use the existing version catalog reference (libs.playground.styling) instead",
+                        "markdown": "Use the existing version catalog reference (`libs.playground.styling`) instead"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 43,
+                                    "startColumn": 20,
+                                    "endLine": 43,
+                                    "endColumn": 78,
+                                    "charOffset": 1046,
+                                    "charLength": 58,
+                                    "snippet": {
+                                        "text": "\"com.alexcawl.contract.playground:styling:$stylingVersion\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 41,
+                                    "endLine": 46,
+                                    "snippet": {
+                                        "text": "    val stylingVersion = providers.gradleProperty(\"stylingVersion\").orElse(libs.versions.playground.baseline).get()\n    implementation(libs.playground.component.api)\n    implementation(\"com.alexcawl.contract.playground:styling:$stylingVersion\")\n    implementation(platform(libs.androidx.compose.bom))\n    implementation(libs.androidx.activity.compose)\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Replace with existing version catalog reference playground-styling",
+                                "markdown": "Replace with existing version catalog reference `playground-styling`"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 43,
+                                                "startColumn": 20,
+                                                "charOffset": 1046,
+                                                "endLine": 43,
+                                                "endColumn": 78,
+                                                "charLength": 58
+                                            },
+                                            "insertedContent": {
+                                                "text": "libs.playground.styling\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "ea72a68495fc79a8"
+                    }
+                }
+            ]
+        }
+    ]
+}

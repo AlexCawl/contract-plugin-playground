@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/mikhail/Library/Java/JavaVirtualMachines/ms-21.0.11/Contents/Home/bin/java",
+    "--class-path",
+    "/Users/mikhail/Developer/contract-plugin-playground/artifacts/1.1-inline/bytecode/component/classes.jar:/Users/mikhail/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.20/94c1451890d164aed65d43b3db0b7ecef7c183e7/kotlin-stdlib-2.4.20.jar",
+    "/Users/mikhail/Developer/contract-plugin-playground/artifacts/reflection-helper/ReflectiveCheck.java"
+  ],
+  "exit_code": 0,
+  "component_jar_sha256": "113f5ca20f14a88c5e5b634035c530c6aa883fd6500629f41c77e6eeed2b4666",
+  "kotlin_stdlib_sha256": "2226de463d309d4a5500a481320b3dea515a6981dcae1def531fbc158884e25f"
+}

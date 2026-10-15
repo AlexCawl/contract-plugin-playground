@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-15T20:23:19.023Z" hostname="Mikhails-MacBook-Pro.local" time="0.066">
+  <properties/>
+  <testcase name="v1FactoryDefault" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.052"/>
+  <testcase name="introducedAtDefault" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.001"/>
+  <testcase name="v1FactoryFull" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.001"/>
+  <testcase name="v2FactoryFull" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.0"/>
+  <testcase name="v1CopyFull" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.007"/>
+  <testcase name="v2FactoryDefault" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.0"/>
+  <testcase name="jvmOverloadsFull" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.0"/>
+  <testcase name="v1CopyDefault" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.001"/>
+  <testcase name="v2CopyDefault" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.0"/>
+  <testcase name="jvmOverloadsDefault" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.0"/>
+  <testcase name="introducedAtFull" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.0"/>
+  <testcase name="v2CopyFull" classname="com.alexcawl.contract.playground.app.BinaryCompatibilityTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,38 @@
+Calculating task graph as no cached configuration is available for tasks: :styling:publishReleasePublicationToMavenLocal
+> Task :styling:preBuild UP-TO-DATE
+> Task :styling:preReleaseBuild UP-TO-DATE
+> Task :styling:checkReleaseAarMetadata UP-TO-DATE
+> Task :styling:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :styling:mergeReleaseNativeLibs NO-SOURCE
+> Task :styling:stripReleaseDebugSymbols NO-SOURCE
+> Task :styling:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :styling:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :styling:generateReleaseResources UP-TO-DATE
+> Task :styling:packageReleaseResources UP-TO-DATE
+> Task :styling:processReleaseNavigationResources UP-TO-DATE
+> Task :styling:parseReleaseLocalResources UP-TO-DATE
+> Task :styling:generateReleaseRFile UP-TO-DATE
+> Task :styling:extractReleaseAnnotations
+> Task :styling:generateReleaseAssets UP-TO-DATE
+> Task :styling:mergeReleaseAssets UP-TO-DATE
+> Task :styling:compileReleaseKotlin
+> Task :styling:javaPreCompileRelease UP-TO-DATE
+> Task :styling:compileReleaseJavaWithJavac NO-SOURCE
+> Task :styling:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :styling:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :styling:prepareLintJarForPublish UP-TO-DATE
+> Task :styling:prepareReleaseArtProfile UP-TO-DATE
+> Task :styling:processReleaseManifest UP-TO-DATE
+> Task :styling:processReleaseJavaRes UP-TO-DATE
+> Task :styling:mergeReleaseJavaResource UP-TO-DATE
+> Task :styling:syncReleaseLibJars
+> Task :styling:writeReleaseAarMetadata UP-TO-DATE
+> Task :styling:bundleReleaseAar
+> Task :styling:sourceReleaseJar
+> Task :styling:generateMetadataFileForReleasePublication
+> Task :styling:generatePomFileForReleasePublication
+> Task :styling:publishReleasePublicationToMavenLocal
+
+BUILD SUCCESSFUL in 2s
+27 actionable tasks: 8 executed, 19 up-to-date
+Configuration cache entry stored.

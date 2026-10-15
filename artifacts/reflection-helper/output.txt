@@ -1,0 +1,2 @@
+two null fields: equals=false
+signed float zero: equals=true, hashCode=0 / -2147483648

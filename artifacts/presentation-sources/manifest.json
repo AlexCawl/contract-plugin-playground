@@ -1,0 +1,6 @@
+{
+  "playground_branch": "codex/contract-1.1",
+  "playground_source_commit": "5978ea143605f18dc72bb52299beca03ba8f408b",
+  "plugin_source_commit": "85b8c2d03c64fbe47cded4ac54cecf7e4ffe1517",
+  "note": "Exact source snapshots for documentation on main; archived files are not compiled by Gradle."
+}

@@ -1,0 +1,182 @@
+{
+  "com.alexcawl.contract.playground.component.v1.Contract1": {
+    "old_methods": 3,
+    "new_methods": 5,
+    "removed": [],
+    "added": [
+      [
+        "access$borderStroke$jd",
+        "(Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;"
+      ],
+      [
+        "borderStroke",
+        "(Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v1.Contract1$DefaultImpls": {
+    "old_methods": 1,
+    "new_methods": 2,
+    "removed": [],
+    "added": [
+      [
+        "borderStroke",
+        "(Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v1.Contract1Wrapper": {
+    "old_methods": 2,
+    "new_methods": 3,
+    "removed": [],
+    "added": [
+      [
+        "access$borderStroke$jd",
+        "(Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v1.Contract1Kt": {
+    "old_methods": 5,
+    "new_methods": 10,
+    "removed": [],
+    "added": [
+      [
+        "Contract1",
+        "(Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/alexcawl/contract/playground/component/v1/Contract1;"
+      ],
+      [
+        "Contract1$default",
+        "(Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v1/Contract1;"
+      ],
+      [
+        "copy",
+        "(Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/alexcawl/contract/playground/component/v1/Contract1;"
+      ],
+      [
+        "copy$default",
+        "(Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v1/Contract1;"
+      ],
+      [
+        "rememberCopy",
+        "(Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)Lcom/alexcawl/contract/playground/component/v1/Contract1;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v2.Contract2": {
+    "old_methods": 4,
+    "new_methods": 6,
+    "removed": [],
+    "added": [
+      [
+        "access$borderStroke$jd",
+        "(Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/foundation/BorderStroke;"
+      ],
+      [
+        "borderStroke",
+        "()Landroidx/compose/foundation/BorderStroke;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v2.Contract2$DefaultImpls": {
+    "old_methods": 1,
+    "new_methods": 2,
+    "removed": [],
+    "added": [
+      [
+        "borderStroke",
+        "(Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/foundation/BorderStroke;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v2.Contract2$Contract": {
+    "old_methods": 4,
+    "new_methods": 7,
+    "removed": [],
+    "added": [
+      [
+        "com.alexcawl.contract.playground.component.v2.Contract2$Contract",
+        "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V"
+      ],
+      [
+        "com.alexcawl.contract.playground.component.v2.Contract2$Contract",
+        "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+      ],
+      [
+        "getBorderStroke",
+        "()Lkotlin/jvm/functions/Function1;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v2.Contract2Kt": {
+    "old_methods": 4,
+    "new_methods": 8,
+    "removed": [],
+    "added": [
+      [
+        "Contract2",
+        "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;"
+      ],
+      [
+        "Contract2$default",
+        "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;"
+      ],
+      [
+        "copy",
+        "(Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;"
+      ],
+      [
+        "copy$default",
+        "(Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.v2.Contract2Impl": {
+    "old_methods": 6,
+    "new_methods": 7,
+    "removed": [
+      [
+        "com.alexcawl.contract.playground.component.v2.Contract2Impl",
+        "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V"
+      ]
+    ],
+    "added": [
+      [
+        "borderStroke",
+        "()Landroidx/compose/foundation/BorderStroke;"
+      ],
+      [
+        "com.alexcawl.contract.playground.component.v2.Contract2Impl",
+        "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V"
+      ]
+    ]
+  },
+  "com.alexcawl.contract.playground.component.VersionedFunctionsKt": {
+    "old_methods": 5,
+    "new_methods": 8,
+    "removed": [
+      [
+        "withJvmOverloads$default",
+        "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;"
+      ]
+    ],
+    "added": [
+      [
+        "withIntroducedAt",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      ],
+      [
+        "withIntroducedAt$default",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;"
+      ],
+      [
+        "withJvmOverloads",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      ],
+      [
+        "withJvmOverloads$default",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;"
+      ]
+    ]
+  }
+}
