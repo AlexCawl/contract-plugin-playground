@@ -4,6 +4,9 @@ An Android binary-compatibility sandbox with three modules: `component`, `stylin
 Both library dependencies in `app`, and the Component dependency in `styling`, resolve from
 **Maven Local**, never from `project(...)` dependencies.
 
+Detailed report: [BINARY_COMPATIBILITY.md](docs/BINARY_COMPATIBILITY.md).
+Full Kotlin/JVM signatures: [API_SIGNATURES.md](docs/API_SIGNATURES.md).
+
 ## Two release branches
 
 - `codex/contract-1.0`: Component 1.0 has `cornerSize()` and default `shape()`.
@@ -36,6 +39,7 @@ Then upgrade only Component:
 ```sh
 git switch codex/contract-1.1
 python3 tools/record_abi.py 1.1
+python3 tools/compare_abi.py
 ```
 
 The recorder publishes Component, publishes Styling only during the 1.0 stage, verifies App,

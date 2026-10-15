@@ -1,0 +1,236 @@
+Compiled from "BinaryProbes.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe {
+  public static final com.alexcawl.contract.playground.styling.Contract1BinaryProbe INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/Contract1BinaryProbe;
+  public static final int $stable;
+    descriptor: I
+  private com.alexcawl.contract.playground.styling.Contract1BinaryProbe();
+    descriptor: ()V
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 factoryDefault();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 factoryFull();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 copyDefault(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 copyFull(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 rememberedCopy(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  private static final androidx.compose.ui.graphics.Shape factoryFull$lambda$1(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  private static final androidx.compose.ui.unit.Dp rememberedCopy$lambda$0(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/unit/Dp;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyDefault$$inlined$copy$default$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyDefault$$inlined$copy$default$1(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)V
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyFull$$inlined$copy$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$copyFull$$inlined$copy$1(com.alexcawl.contract.playground.component.v1.Contract1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;)V
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryDefault$$inlined$Contract1$default$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryDefault$$inlined$Contract1$default$1(kotlin.jvm.functions.Function3);
+    descriptor: (Lkotlin/jvm/functions/Function3;)V
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryFull$$inlined$Contract1$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$factoryFull$$inlined$Contract1$1(kotlin.jvm.functions.Function3);
+    descriptor: (Lkotlin/jvm/functions/Function3;)V
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.Contract1BinaryProbe$rememberedCopy$$inlined$rememberCopy$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+  final kotlin.jvm.functions.Function3 $cornerSize;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.styling.Contract1BinaryProbe$rememberedCopy$$inlined$rememberCopy$1(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;)V
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+}
+Compiled from "BinaryProbes.kt"
+public final class com.alexcawl.contract.playground.styling.Contract2BinaryProbe {
+  public static final com.alexcawl.contract.playground.styling.Contract2BinaryProbe INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/Contract2BinaryProbe;
+  public static final int $stable;
+    descriptor: I
+  private com.alexcawl.contract.playground.styling.Contract2BinaryProbe();
+    descriptor: ()V
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 factoryDefault();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 factoryFull();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 copyDefault(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 copyFull(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2$Contract snapshotDefault();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2$Contract;
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2$Contract snapshotFull();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2$Contract;
+
+  private static final androidx.compose.ui.unit.Dp factoryDefault$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  private static final androidx.compose.ui.unit.Dp factoryFull$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  private static final androidx.compose.ui.graphics.Shape factoryFull$lambda$1(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+
+  private static final androidx.compose.ui.unit.Dp copyDefault$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  private static final androidx.compose.ui.unit.Dp copyFull$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  private static final androidx.compose.ui.graphics.Shape copyFull$lambda$1(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+
+  private static final androidx.compose.ui.unit.Dp snapshotDefault$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  private static final androidx.compose.ui.unit.Dp snapshotFull$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  private static final androidx.compose.ui.graphics.Shape snapshotFull$lambda$1(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "BinaryProbes.kt"
+public final class com.alexcawl.contract.playground.styling.FunctionBinaryProbe {
+  public static final com.alexcawl.contract.playground.styling.FunctionBinaryProbe INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/FunctionBinaryProbe;
+  public static final int $stable;
+    descriptor: I
+  private com.alexcawl.contract.playground.styling.FunctionBinaryProbe();
+    descriptor: ()V
+
+  public final java.lang.String jvmOverloadsDefault();
+    descriptor: ()Ljava/lang/String;
+
+  public final java.lang.String jvmOverloadsFull();
+    descriptor: ()Ljava/lang/String;
+
+  public final java.lang.String introducedAtDefault();
+    descriptor: ()Ljava/lang/String;
+
+  public final java.lang.String introducedAtFull();
+    descriptor: ()Ljava/lang/String;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1Presets.kt"
+public final class com.alexcawl.contract.playground.styling.v1.Contract1Presets {
+  public static final com.alexcawl.contract.playground.styling.v1.Contract1Presets INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/v1/Contract1Presets;
+  public static final int $stable;
+    descriptor: I
+  private com.alexcawl.contract.playground.styling.v1.Contract1Presets();
+    descriptor: ()V
+
+  public final com.alexcawl.contract.playground.component.v1.Contract1 getDefault(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.styling.v1.Contract1Presets$_get_default_$lambda$0$$inlined$Contract1$default$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.styling.v1.Contract1Presets$_get_default_$lambda$0$$inlined$Contract1$default$1(kotlin.jvm.functions.Function3);
+    descriptor: (Lkotlin/jvm/functions/Function3;)V
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+}
+Compiled from "Contract2Presets.kt"
+public final class com.alexcawl.contract.playground.styling.v2.Contract2Presets {
+  public static final com.alexcawl.contract.playground.styling.v2.Contract2Presets INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/styling/v2/Contract2Presets;
+  public static final int $stable;
+    descriptor: I
+  private com.alexcawl.contract.playground.styling.v2.Contract2Presets();
+    descriptor: ()V
+
+  public final com.alexcawl.contract.playground.component.v2.Contract2 getDefault(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  private static final androidx.compose.ui.unit.Dp _get_default_$lambda$0$0(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/unit/Dp;
+
+  static {};
+    descriptor: ()V
+}

@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.alexcawl.contract.playground",
+    "module": "component",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.02.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "component-1.1.aar",
+          "url": "component-1.1.aar",
+          "size": 48804,
+          "sha512": "4d135dec85199af2a87d6ae87a4b152d0cd6dda9e4bdda9a786bdc482b3816901f80988fd773a1ab3d2b570a9e7fd5f35cd9cbbdb0d49bb111029415afd9e57a",
+          "sha256": "c17c924cf10bd225aa09ebd01cd35ac33f1b7a2d24e93cd5e1560ddfaa2b50eb",
+          "sha1": "b9a06ff76c700f85925930a35f9ad49062e921dd",
+          "md5": "4ea1c4bbdc80b33e07aaed8dd2e37838"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.02.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "component-1.1.aar",
+          "url": "component-1.1.aar",
+          "size": 48804,
+          "sha512": "4d135dec85199af2a87d6ae87a4b152d0cd6dda9e4bdda9a786bdc482b3816901f80988fd773a1ab3d2b570a9e7fd5f35cd9cbbdb0d49bb111029415afd9e57a",
+          "sha256": "c17c924cf10bd225aa09ebd01cd35ac33f1b7a2d24e93cd5e1560ddfaa2b50eb",
+          "sha1": "b9a06ff76c700f85925930a35f9ad49062e921dd",
+          "md5": "4ea1c4bbdc80b33e07aaed8dd2e37838"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "component-1.1-sources.jar",
+          "url": "component-1.1-sources.jar",
+          "size": 5300,
+          "sha512": "3c809b2649bf4d1ace5b189ff0e5e9ab0eb18bd431a6bf8ffc6f760db9ff4ad89e2cfba875f1ecca8ec753f7d014595a3576b06ded80daf644cacc201e6bd8b3",
+          "sha256": "d7c676240d4582a30a9645a23657f3308fc13a2c26c4ef3a3f38b187efd9f3c2",
+          "sha1": "3445cf7bd196db308bfb3f902f6fb09022039066",
+          "md5": "c2e980624615c021e1461e9d1b03dfef"
+        }
+      ]
+    }
+  ]
+}

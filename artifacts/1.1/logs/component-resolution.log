@@ -1,0 +1,31 @@
+Calculating task graph as configuration cache cannot be reused because file 'gradle/libs.versions.toml' has changed.
+
+> Task :app:dependencyInsight
+com.alexcawl.contract.playground:component:1.1
+  Variant releaseVariantReleaseRuntimePublication:
+    | Attribute Name                                  | Provided     | Requested    |
+    |-------------------------------------------------|--------------|--------------|
+    | org.gradle.dependency.bundling                  | external     |              |
+    | org.gradle.libraryelements                      | aar          |              |
+    | org.gradle.status                               | release      |              |
+    | org.gradle.category                             | library      | library      |
+    | org.gradle.usage                                | java-runtime | java-runtime |
+    | com.android.build.api.attributes.AgpVersionAttr |              | 9.4.1        |
+    | com.android.build.api.attributes.BuildTypeAttr  |              | debug        |
+    | org.gradle.jvm.environment                      |              | android      |
+    | org.jetbrains.kotlin.platform.type              |              | androidJvm   |
+   Selection reasons:
+      - By conflict resolution: between versions 1.1 and 1.0
+
+com.alexcawl.contract.playground:component:1.1
+\--- debugRuntimeClasspath
+
+com.alexcawl.contract.playground:component:1.0 -> 1.1
+\--- com.alexcawl.contract.playground:styling:1.0
+     \--- debugRuntimeClasspath
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 408ms
+1 actionable task: 1 executed
+Configuration cache entry stored.

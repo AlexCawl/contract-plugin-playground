@@ -1,0 +1,546 @@
+Compiled from "VersionedFunctions.kt"
+public final class com.alexcawl.contract.playground.component.VersionedFunctionsKt {
+  public static final java.lang.String withJvmOverloads(java.lang.String, java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+  public static java.lang.String withJvmOverloads$default(java.lang.String, java.lang.String, java.lang.String, int, java.lang.Object);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+
+  public static final java.lang.String withIntroducedAt(java.lang.String, java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+  public static java.lang.String withIntroducedAt$default(java.lang.String, java.lang.String, java.lang.String, int, java.lang.Object);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+
+  public static final java.lang.String withIntroducedAt(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+  public static java.lang.String withIntroducedAt$default(java.lang.String, java.lang.String, int, java.lang.Object);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+
+  public static final java.lang.String withJvmOverloads(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+  public static final java.lang.String withJvmOverloads(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/lang/String;
+}
+Compiled from "ContractButton1.kt"
+public final class com.alexcawl.contract.playground.component.v1.ComposableSingletons$ContractButton1Kt {
+  public static final com.alexcawl.contract.playground.component.v1.ComposableSingletons$ContractButton1Kt INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/ComposableSingletons$ContractButton1Kt;
+  private static kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> lambda$455264427;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.component.v1.ComposableSingletons$ContractButton1Kt();
+    descriptor: ()V
+
+  public final kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> getLambda$455264427$component();
+    descriptor: ()Lkotlin/jvm/functions/Function3;
+
+  private static final kotlin.Unit lambda_455264427$lambda$0(androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public interface com.alexcawl.contract.playground.component.v1.Contract1 {
+  public abstract float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public default androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public default androidx.compose.foundation.BorderStroke borderStroke(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+
+  public static androidx.compose.ui.graphics.Shape access$shape$jd(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public static androidx.compose.foundation.BorderStroke access$borderStroke$jd(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1$DefaultImpls {
+  public static androidx.compose.ui.graphics.Shape shape(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public static androidx.compose.foundation.BorderStroke borderStroke(com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1 Contract1(kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static com.alexcawl.contract.playground.component.v1.Contract1 Contract1$default(kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3, int, java.lang.Object);
+    descriptor: (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static final com.alexcawl.contract.playground.component.v1.Contract1 Contract1(kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>);
+    descriptor: (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static com.alexcawl.contract.playground.component.v1.Contract1 Contract1$default(kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3, int, java.lang.Object);
+    descriptor: (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static final com.alexcawl.contract.playground.component.v1.Contract1 copy(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static com.alexcawl.contract.playground.component.v1.Contract1 copy$default(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3, int, java.lang.Object);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static final com.alexcawl.contract.playground.component.v1.Contract1 rememberCopy(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.foundation.BorderStroke>, androidx.compose.runtime.Composer, int, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static final com.alexcawl.contract.playground.component.v1.Contract1 copy(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static com.alexcawl.contract.playground.component.v1.Contract1 copy$default(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3, int, java.lang.Object);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static final com.alexcawl.contract.playground.component.v1.Contract1 rememberCopy(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>, androidx.compose.runtime.Composer, int, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)Lcom/alexcawl/contract/playground/component/v1/Contract1;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$Contract1$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1 {
+  final kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.unit.Dp> $cornerSize;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  final kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.graphics.Shape> $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  final kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.foundation.BorderStroke> $borderStroke;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$Contract1$1(kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)V
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public androidx.compose.foundation.BorderStroke borderStroke(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$$inlined$copy$1 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+  final kotlin.jvm.functions.Function3 $cornerSize;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  final kotlin.jvm.functions.Function3 $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$$inlined$copy$1(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function3);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)V
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public androidx.compose.foundation.BorderStroke borderStroke(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$1 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.unit.Dp> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$1 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$copy$1;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$1();
+    descriptor: ()V
+
+  public final float invoke-ccRj1GA(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)F
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$2 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.graphics.Shape> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$2 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$copy$2;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$2();
+    descriptor: ()V
+
+  public final androidx.compose.ui.graphics.Shape invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$3 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.foundation.BorderStroke> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$3 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$copy$3;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$3();
+    descriptor: ()V
+
+  public final androidx.compose.foundation.BorderStroke invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$4 extends com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode implements com.alexcawl.contract.playground.component.v1.Contract1Wrapper {
+  final com.alexcawl.contract.playground.component.v1.Contract1 $this_copy;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1;
+  final kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.unit.Dp> $cornerSize;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  final kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.graphics.Shape> $shape;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  final kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.foundation.BorderStroke> $borderStroke;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$4(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function3<? super com.alexcawl.contract.playground.component.v1.Contract1Wrapper, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)V
+
+  public com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public float cornerSize-chRvn1I(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)F
+
+  public androidx.compose.ui.graphics.Shape shape(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public androidx.compose.foundation.BorderStroke borderStroke(androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$5 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.unit.Dp> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$5 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$copy$5;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$5();
+    descriptor: ()V
+
+  public final float invoke-ccRj1GA(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)F
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$6 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.graphics.Shape> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$6 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$copy$6;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$copy$6();
+    descriptor: ()V
+
+  public final androidx.compose.ui.graphics.Shape invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$1 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.unit.Dp> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$1 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$rememberCopy$1;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$1();
+    descriptor: ()V
+
+  public final float invoke-ccRj1GA(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)F
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$2 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.graphics.Shape> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$2 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$rememberCopy$2;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$2();
+    descriptor: ()V
+
+  public final androidx.compose.ui.graphics.Shape invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$3 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.foundation.BorderStroke> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$3 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$rememberCopy$3;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$3();
+    descriptor: ()V
+
+  public final androidx.compose.foundation.BorderStroke invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$5 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.unit.Dp> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$5 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$rememberCopy$5;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$5();
+    descriptor: ()V
+
+  public final float invoke-ccRj1GA(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)F
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$6 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.ui.graphics.Shape> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$6 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$rememberCopy$6;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$6();
+    descriptor: ()V
+
+  public final androidx.compose.ui.graphics.Shape invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$7 implements kotlin.jvm.functions.Function3<com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, java.lang.Integer, androidx.compose.foundation.BorderStroke> {
+  public static final com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$7 INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/Contract1Kt$rememberCopy$7;
+  public com.alexcawl.contract.playground.component.v1.Contract1Kt$rememberCopy$7();
+    descriptor: ()V
+
+  public final androidx.compose.foundation.BorderStroke invoke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract1.kt"
+public interface com.alexcawl.contract.playground.component.v1.Contract1Wrapper extends com.alexcawl.contract.playground.component.v1.Contract1 {
+  public abstract com.alexcawl.contract.playground.component.v1.Contract1 getWrapped();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v1/Contract1;
+
+  public static androidx.compose.ui.graphics.Shape access$shape$jd(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public static androidx.compose.foundation.BorderStroke access$borderStroke$jd(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract1.kt"
+public final class com.alexcawl.contract.playground.component.v1.Contract1Wrapper$DefaultImpls {
+  public static androidx.compose.ui.graphics.Shape shape(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;
+
+  public static androidx.compose.foundation.BorderStroke borderStroke(com.alexcawl.contract.playground.component.v1.Contract1Wrapper, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1Wrapper;Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "ContractButton1.kt"
+public final class com.alexcawl.contract.playground.component.v1.ContractButton1Kt {
+  public static final void ContractButton1(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function0<kotlin.Unit>, androidx.compose.ui.Modifier, androidx.compose.runtime.Composer, int, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V
+
+  private static final kotlin.Unit ContractButton1$lambda$0(com.alexcawl.contract.playground.component.v1.Contract1, kotlin.jvm.functions.Function0, androidx.compose.ui.Modifier, int, int, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v1/Contract1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;IILandroidx/compose/runtime/Composer;I)Lkotlin/Unit;
+}
+Compiled from "ReflectiveEqualsHashCode.kt"
+public abstract class com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode {
+  private static final com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode$Companion Companion;
+    descriptor: Lcom/alexcawl/contract/playground/component/v1/ReflectiveEqualsHashCode$Companion;
+  public static final int $stable;
+    descriptor: I
+  private static final java.util.concurrent.ConcurrentHashMap<java.lang.Class<?>, java.lang.reflect.Field[]> declaredFieldsCache;
+    descriptor: Ljava/util/concurrent/ConcurrentHashMap;
+  public com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode();
+    descriptor: ()V
+
+  public boolean equals(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Z
+
+  public int hashCode();
+    descriptor: ()I
+
+  private final java.lang.reflect.Field[] getDeclaredFields(java.lang.Class<?>);
+    descriptor: (Ljava/lang/Class;)[Ljava/lang/reflect/Field;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "ReflectiveEqualsHashCode.kt"
+final class com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode$Companion {
+  private com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode$Companion();
+    descriptor: ()V
+
+  public com.alexcawl.contract.playground.component.v1.ReflectiveEqualsHashCode$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+    descriptor: (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+Compiled from "ContractButton2.kt"
+public final class com.alexcawl.contract.playground.component.v2.ComposableSingletons$ContractButton2Kt {
+  public static final com.alexcawl.contract.playground.component.v2.ComposableSingletons$ContractButton2Kt INSTANCE;
+    descriptor: Lcom/alexcawl/contract/playground/component/v2/ComposableSingletons$ContractButton2Kt;
+  private static kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> lambda$-1625686963;
+    descriptor: Lkotlin/jvm/functions/Function3;
+  public com.alexcawl.contract.playground.component.v2.ComposableSingletons$ContractButton2Kt();
+    descriptor: ()V
+
+  public final kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> getLambda$-1625686963$component();
+    descriptor: ()Lkotlin/jvm/functions/Function3;
+
+  private static final kotlin.Unit lambda__1625686963$lambda$0(androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, int);
+    descriptor: (Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract2.kt"
+public interface com.alexcawl.contract.playground.component.v2.Contract2 {
+  public abstract float cornerSize-D9Ej5fM();
+    descriptor: ()F
+
+  public default androidx.compose.ui.graphics.Shape shape();
+    descriptor: ()Landroidx/compose/ui/graphics/Shape;
+
+  public default androidx.compose.foundation.BorderStroke borderStroke();
+    descriptor: ()Landroidx/compose/foundation/BorderStroke;
+
+  public abstract com.alexcawl.contract.playground.component.v2.Contract2$Contract contract();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2$Contract;
+
+  public static androidx.compose.ui.graphics.Shape access$shape$jd(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+
+  public static androidx.compose.foundation.BorderStroke access$borderStroke$jd(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract2.kt"
+public final class com.alexcawl.contract.playground.component.v2.Contract2$Contract {
+  private final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp> cornerSize;
+    descriptor: Lkotlin/jvm/functions/Function1;
+  private final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.graphics.Shape> shape;
+    descriptor: Lkotlin/jvm/functions/Function1;
+  private final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke> borderStroke;
+    descriptor: Lkotlin/jvm/functions/Function1;
+  public static final int $stable;
+    descriptor: I
+  public com.alexcawl.contract.playground.component.v2.Contract2$Contract(kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+
+  public com.alexcawl.contract.playground.component.v2.Contract2$Contract(kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, kotlin.jvm.internal.DefaultConstructorMarker);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+  public final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp> getCornerSize();
+    descriptor: ()Lkotlin/jvm/functions/Function1;
+
+  public final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.graphics.Shape> getShape();
+    descriptor: ()Lkotlin/jvm/functions/Function1;
+
+  public final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke> getBorderStroke();
+    descriptor: ()Lkotlin/jvm/functions/Function1;
+
+  public com.alexcawl.contract.playground.component.v2.Contract2$Contract(kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+
+  public com.alexcawl.contract.playground.component.v2.Contract2$Contract(kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, kotlin.jvm.internal.DefaultConstructorMarker);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+  static {};
+    descriptor: ()V
+}
+Compiled from "Contract2.kt"
+public final class com.alexcawl.contract.playground.component.v2.Contract2$DefaultImpls {
+  public static androidx.compose.ui.graphics.Shape shape(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/ui/graphics/Shape;
+
+  public static androidx.compose.foundation.BorderStroke borderStroke(com.alexcawl.contract.playground.component.v2.Contract2);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;)Landroidx/compose/foundation/BorderStroke;
+}
+Compiled from "Contract2.kt"
+final class com.alexcawl.contract.playground.component.v2.Contract2Impl implements com.alexcawl.contract.playground.component.v2.Contract2 {
+  private final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp> cornerSize;
+    descriptor: Lkotlin/jvm/functions/Function1;
+  private final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.graphics.Shape> shape;
+    descriptor: Lkotlin/jvm/functions/Function1;
+  private final kotlin.jvm.functions.Function1<com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke> borderStroke;
+    descriptor: Lkotlin/jvm/functions/Function1;
+  public com.alexcawl.contract.playground.component.v2.Contract2Impl(kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+
+  public float cornerSize-D9Ej5fM();
+    descriptor: ()F
+
+  public androidx.compose.ui.graphics.Shape shape();
+    descriptor: ()Landroidx/compose/ui/graphics/Shape;
+
+  public androidx.compose.foundation.BorderStroke borderStroke();
+    descriptor: ()Landroidx/compose/foundation/BorderStroke;
+
+  public com.alexcawl.contract.playground.component.v2.Contract2$Contract contract();
+    descriptor: ()Lcom/alexcawl/contract/playground/component/v2/Contract2$Contract;
+
+  public boolean equals(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Z
+
+  public int hashCode();
+    descriptor: ()I
+}
+Compiled from "Contract2.kt"
+public final class com.alexcawl.contract.playground.component.v2.Contract2Kt {
+  public static final com.alexcawl.contract.playground.component.v2.Contract2 Contract2(kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static com.alexcawl.contract.playground.component.v2.Contract2 Contract2$default(kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, java.lang.Object);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static final com.alexcawl.contract.playground.component.v2.Contract2 copy(com.alexcawl.contract.playground.component.v2.Contract2, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.ui.unit.Dp>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, ? extends androidx.compose.ui.graphics.Shape>, kotlin.jvm.functions.Function1<? super com.alexcawl.contract.playground.component.v2.Contract2, androidx.compose.foundation.BorderStroke>);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static com.alexcawl.contract.playground.component.v2.Contract2 copy$default(com.alexcawl.contract.playground.component.v2.Contract2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, java.lang.Object);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static final com.alexcawl.contract.playground.component.v2.Contract2 Contract2(kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static com.alexcawl.contract.playground.component.v2.Contract2 Contract2$default(kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, java.lang.Object);
+    descriptor: (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static final com.alexcawl.contract.playground.component.v2.Contract2 copy(com.alexcawl.contract.playground.component.v2.Contract2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+
+  public static com.alexcawl.contract.playground.component.v2.Contract2 copy$default(com.alexcawl.contract.playground.component.v2.Contract2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, java.lang.Object);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/alexcawl/contract/playground/component/v2/Contract2;
+}
+Compiled from "ContractButton2.kt"
+public final class com.alexcawl.contract.playground.component.v2.ContractButton2Kt {
+  public static final void ContractButton2(com.alexcawl.contract.playground.component.v2.Contract2, kotlin.jvm.functions.Function0<kotlin.Unit>, androidx.compose.ui.Modifier, androidx.compose.runtime.Composer, int, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V
+
+  private static final kotlin.Unit ContractButton2$lambda$0(com.alexcawl.contract.playground.component.v2.Contract2, kotlin.jvm.functions.Function0, androidx.compose.ui.Modifier, int, int, androidx.compose.runtime.Composer, int);
+    descriptor: (Lcom/alexcawl/contract/playground/component/v2/Contract2;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;IILandroidx/compose/runtime/Composer;I)Lkotlin/Unit;
+}
