@@ -31,26 +31,28 @@ Start from the 1.0 branch:
 
 ```sh
 git switch codex/contract-1.0
-python3 tools/record_abi.py 1.0 --publish-styling
+python3 tools/record_abi.py 1.0 --publish-styling --label 1.0-probes
 ```
 
 Then upgrade only Component:
 
 ```sh
 git switch codex/contract-1.1
-python3 tools/record_abi.py 1.1
+python3 tools/record_abi.py 1.1 --label 1.1-probes --baseline-label 1.0-probes
 python3 tools/compare_abi.py
 ```
 
 The recorder publishes Component, publishes Styling only during the 1.0 stage, verifies App,
-checks the frozen Styling AAR checksum, and saves original evidence under `artifacts/1.0` and
-`artifacts/1.1`: Maven publications and source JARs, extracted class JARs, complete javap signatures,
+checks the frozen Styling AAR checksum, and saves original evidence under `artifacts/1.0-probes` and
+`artifacts/1.1-probes`: Maven publications and source JARs, extracted class JARs, complete javap signatures,
 bytecode and verbose dumps, dependency reports, raw build logs, JUnit XML/HTML, lint reports,
 debug APKs, build configuration, manifests, and SHA-256 checksums.
 
-The 1.1 App comparison intentionally fails only `jvmOverloadsDefault`: the old `$default` method
-is absent. Both contracts and the `@IntroducedAt` function must remain binary compatible.
-The recorder accepts exactly this outcome and rejects unexpected failures.
+The App suite has exactly one test for each of the 12 current probes. With frozen Styling 1.0,
+Component 1.1 fails `v1CopyDefault` and `v1CopyFull` because old inline copies lose the new border
+callback, and `jvmOverloadsDefault` because the old `$default` method is absent. V2 and
+`@IntroducedAt` calls pass. The recorder checks this exact result. Original 18-test recordings
+under `artifacts/1.0` and `artifacts/1.1` remain unchanged; new recordings require a fresh label.
 
 ## Existing contract behavior tests
 
@@ -61,3 +63,23 @@ Those separate four tests intentionally have two failures, as documented in thei
 
 `app` displays two buttons using presets from the frozen Styling library. No compiler plugin
 or benchmark module is used.
+
+Current 12-test results: [PROBE_RECOMPILATION.md](docs/PROBE_RECOMPILATION.md).
+
+## Recompile the current probes
+
+The current `BinaryProbes.kt` is identical in both release branches. To compare the frozen and
+rebuilt consumers on `codex/contract-1.1`:
+
+```sh
+./gradlew :app:testDebugUnitTest --tests '*BinaryCompatibilityTest'
+# Expected: 9 pass, 3 fail with Styling 1.0.
+
+./gradlew :styling:publishReleasePublicationToMavenLocal -PstylingVersion=1.1
+./gradlew :app:testDebugUnitTest --tests '*BinaryCompatibilityTest' -PstylingVersion=1.1
+# Expected: all 12 pass with Styling 1.1 compiled against Component 1.1.
+```
+
+`stylingVersion` selects both the published Styling version and the Component version used
+to compile it. Omitting it keeps Styling pinned to 1.0. Rebuilding publishes a separate 1.1
+artifact; it does not overwrite the frozen 1.0 artifact.

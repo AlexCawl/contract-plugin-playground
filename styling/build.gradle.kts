@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.alexcawl.contract.playground"
-version = libs.versions.playground.baseline.get()
+version = providers.gradleProperty("stylingVersion").orElse(libs.versions.playground.baseline).get()
 
 android {
     namespace = "com.alexcawl.contract.playground.styling"
@@ -39,7 +39,7 @@ kotlin {
 }
 
 dependencies {
-    api(libs.playground.component.baseline)
+    api("com.alexcawl.contract.playground:component:${project.version}")
 }
 
 publishing {

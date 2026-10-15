@@ -38,8 +38,9 @@ kotlin {
 }
 
 dependencies {
+    val stylingVersion = providers.gradleProperty("stylingVersion").orElse(libs.versions.playground.baseline).get()
     implementation(libs.playground.component.api)
-    implementation(libs.playground.styling)
+    implementation("com.alexcawl.contract.playground:styling:$stylingVersion")
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     testImplementation(libs.junit)

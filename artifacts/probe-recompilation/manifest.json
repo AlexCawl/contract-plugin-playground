@@ -1,0 +1,161 @@
+{
+  "probes_sha256": "207f7dd49df785c1cda14e3ee7dd9750a37f3439bab87c30c2493fe85e6e4490",
+  "component_for_baseline": "1.0",
+  "component_for_comparison": "1.1",
+  "frozen_styling_version": "1.0",
+  "rebuilt_styling_version": "1.1",
+  "results": {
+    "baseline": [
+      {
+        "name": "v1FactoryDefault",
+        "failure": null
+      },
+      {
+        "name": "introducedAtDefault",
+        "failure": null
+      },
+      {
+        "name": "v1FactoryFull",
+        "failure": null
+      },
+      {
+        "name": "v2FactoryFull",
+        "failure": null
+      },
+      {
+        "name": "v1CopyFull",
+        "failure": null
+      },
+      {
+        "name": "v2FactoryDefault",
+        "failure": null
+      },
+      {
+        "name": "jvmOverloadsFull",
+        "failure": null
+      },
+      {
+        "name": "v1CopyDefault",
+        "failure": null
+      },
+      {
+        "name": "v2CopyDefault",
+        "failure": null
+      },
+      {
+        "name": "jvmOverloadsDefault",
+        "failure": null
+      },
+      {
+        "name": "introducedAtFull",
+        "failure": null
+      },
+      {
+        "name": "v2CopyFull",
+        "failure": null
+      }
+    ],
+    "frozen": [
+      {
+        "name": "v1FactoryDefault",
+        "failure": null
+      },
+      {
+        "name": "introducedAtDefault",
+        "failure": null
+      },
+      {
+        "name": "v1FactoryFull",
+        "failure": null
+      },
+      {
+        "name": "v2FactoryFull",
+        "failure": null
+      },
+      {
+        "name": "v1CopyFull",
+        "failure": "java.lang.AssertionError: expected:<BorderStroke(width=10.0.dp, brush=SolidColor(value=Color(0.0, 0.0, 0.0, 1.0, sRGB IEC61966-2.1)))> but was:<null>"
+      },
+      {
+        "name": "v2FactoryDefault",
+        "failure": null
+      },
+      {
+        "name": "jvmOverloadsFull",
+        "failure": null
+      },
+      {
+        "name": "v1CopyDefault",
+        "failure": "java.lang.AssertionError: expected:<BorderStroke(width=10.0.dp, brush=SolidColor(value=Color(0.0, 0.0, 0.0, 1.0, sRGB IEC61966-2.1)))> but was:<null>"
+      },
+      {
+        "name": "v2CopyDefault",
+        "failure": null
+      },
+      {
+        "name": "jvmOverloadsDefault",
+        "failure": "java.lang.NoSuchMethodError: 'java.lang.String com.alexcawl.contract.playground.component.VersionedFunctionsKt.withJvmOverloads$default(java.lang.String, java.lang.String, int, java.lang.Object)'"
+      },
+      {
+        "name": "introducedAtFull",
+        "failure": null
+      },
+      {
+        "name": "v2CopyFull",
+        "failure": null
+      }
+    ],
+    "rebuilt": [
+      {
+        "name": "v1FactoryDefault",
+        "failure": null
+      },
+      {
+        "name": "introducedAtDefault",
+        "failure": null
+      },
+      {
+        "name": "v1FactoryFull",
+        "failure": null
+      },
+      {
+        "name": "v2FactoryFull",
+        "failure": null
+      },
+      {
+        "name": "v1CopyFull",
+        "failure": null
+      },
+      {
+        "name": "v2FactoryDefault",
+        "failure": null
+      },
+      {
+        "name": "jvmOverloadsFull",
+        "failure": null
+      },
+      {
+        "name": "v1CopyDefault",
+        "failure": null
+      },
+      {
+        "name": "v2CopyDefault",
+        "failure": null
+      },
+      {
+        "name": "jvmOverloadsDefault",
+        "failure": null
+      },
+      {
+        "name": "introducedAtFull",
+        "failure": null
+      },
+      {
+        "name": "v2CopyFull",
+        "failure": null
+      }
+    ]
+  },
+  "styling_1.0_sha256": "6003580559c8897b084a171a1c4aaa9678282959a3291948e9b7b1a665d878cd",
+  "styling_1.1_sha256": "0eebc95f37425bea6f295f636783ae2e2e0434e981a8016430ebe442680644bc"
+}

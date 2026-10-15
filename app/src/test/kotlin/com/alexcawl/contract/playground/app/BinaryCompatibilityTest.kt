@@ -13,106 +13,86 @@ import com.alexcawl.contract.playground.component.v2.Contract2
 import com.alexcawl.contract.playground.styling.Contract1BinaryProbe
 import com.alexcawl.contract.playground.styling.Contract2BinaryProbe
 import com.alexcawl.contract.playground.styling.FunctionBinaryProbe
-import com.alexcawl.contract.playground.styling.v1.Contract1Presets
-import com.alexcawl.contract.playground.styling.v2.Contract2Presets
 import kotlin.coroutines.EmptyCoroutineContext
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
-import org.junit.Assume.assumeNotNull
 import org.junit.Test
 
 class BinaryCompatibilityTest {
     @Test
     fun v1FactoryDefault() = inComposition {
-        assertEquals(RoundedCornerShape(10.dp), Contract1BinaryProbe.factoryDefault().shape())
+        val contract = Contract1BinaryProbe.factoryDefault()
+        assertEquals(RoundedCornerShape(10.dp), contract.shape())
+        assertNull(contract.borderStroke())
     }
 
     @Test
     fun v1FactoryFull() = inComposition {
-        assertEquals(RoundedCornerShape(10.dp), Contract1BinaryProbe.factoryFull().shape())
+        val contract = Contract1BinaryProbe.factoryFull()
+        assertEquals(RoundedCornerShape(10.dp), contract.shape())
+        assertNull(contract.borderStroke())
     }
 
     @Test
     fun v1CopyDefault() = inComposition {
-        val copy = Contract1BinaryProbe.copyDefault(Contract1(cornerSize = { 10.dp }))
+        val original = Contract1(
+            cornerSize = { 10.dp },
+            borderStroke = { BorderStroke(cornerSize(), Color.Black) },
+        )
+        val copy = Contract1BinaryProbe.copyDefault(original)
         assertEquals(20.dp, copy.cornerSize())
         assertEquals(RoundedCornerShape(10.dp), copy.shape())
+        assertEquals(BorderStroke(10.dp, Color.Black), copy.borderStroke())
     }
 
     @Test
     fun v1CopyFull() = inComposition {
-        val copy = Contract1BinaryProbe.copyFull(Contract1(cornerSize = { 10.dp }))
+        val original = Contract1(
+            cornerSize = { 10.dp },
+            borderStroke = { BorderStroke(cornerSize(), Color.Black) },
+        )
+        val copy = Contract1BinaryProbe.copyFull(original)
         assertEquals(20.dp, copy.cornerSize())
         assertEquals(RoundedCornerShape(20.dp), copy.shape())
-    }
-
-    @Test
-    fun v1RememberCopy() = inComposition {
-        val copy = Contract1BinaryProbe.rememberedCopy(Contract1(cornerSize = { 10.dp }))
-        assertEquals(20.dp, copy.cornerSize())
-        assertEquals(RoundedCornerShape(10.dp), copy.shape())
-    }
-
-    @Test
-    fun v1Preset() = inComposition {
-        assertEquals(RoundedCornerShape(12.dp), Contract1Presets.default.shape())
+        assertEquals(BorderStroke(10.dp, Color.Black), copy.borderStroke())
     }
 
     @Test
     fun v2FactoryDefault() {
-        assertEquals(RoundedCornerShape(10.dp), Contract2BinaryProbe.factoryDefault().shape())
+        val contract = Contract2BinaryProbe.factoryDefault()
+        assertEquals(RoundedCornerShape(10.dp), contract.shape())
+        assertNull(contract.borderStroke())
     }
 
     @Test
     fun v2FactoryFull() {
-        assertEquals(RoundedCornerShape(10.dp), Contract2BinaryProbe.factoryFull().shape())
+        val contract = Contract2BinaryProbe.factoryFull()
+        assertEquals(RoundedCornerShape(10.dp), contract.shape())
+        assertNull(contract.borderStroke())
     }
 
     @Test
     fun v2CopyDefault() {
-        val copy = Contract2BinaryProbe.copyDefault(Contract2(cornerSize = { 10.dp }))
+        val original = Contract2(
+            cornerSize = { 10.dp },
+            borderStroke = { BorderStroke(cornerSize(), Color.Black) },
+        )
+        val copy = Contract2BinaryProbe.copyDefault(original)
         assertEquals(20.dp, copy.cornerSize())
         assertEquals(RoundedCornerShape(20.dp), copy.shape())
+        assertEquals(BorderStroke(20.dp, Color.Black), copy.borderStroke())
     }
 
     @Test
     fun v2CopyFull() {
-        val copy = Contract2BinaryProbe.copyFull(Contract2(cornerSize = { 10.dp }))
+        val original = Contract2(
+            cornerSize = { 10.dp },
+            borderStroke = { BorderStroke(cornerSize(), Color.Black) },
+        )
+        val copy = Contract2BinaryProbe.copyFull(original)
         assertEquals(20.dp, copy.cornerSize())
         assertEquals(RoundedCornerShape(20.dp), copy.shape())
-    }
-
-    @Test
-    fun v2SnapshotDefault() {
-        val snapshot = Contract2BinaryProbe.snapshotDefault()
-        assertEquals(10.dp, snapshot.cornerSize(Contract2(cornerSize = { 20.dp })))
-        assertNull(snapshot.shape)
-    }
-
-    @Test
-    fun v2SnapshotFull() {
-        val snapshot = Contract2BinaryProbe.snapshotFull()
-        val source = Contract2(cornerSize = { 20.dp })
-        assertEquals(10.dp, snapshot.cornerSize(source))
-        assertEquals(RoundedCornerShape(20.dp), snapshot.shape!!.invoke(source))
-    }
-
-    @Test
-    fun v2Preset() = inComposition {
-        assertEquals(RoundedCornerShape(12.dp), Contract2Presets.default.shape())
-    }
-
-    @Test
-    fun newV2CallbackSurvivesOldCopy() {
-        val factory = Class.forName("com.alexcawl.contract.playground.component.v2.Contract2Kt")
-            .declaredMethods.find { it.name == "Contract2" && it.parameterCount == 3 }
-        assumeNotNull(factory)
-        val cornerSize: Contract2.() -> androidx.compose.ui.unit.Dp = { 10.dp }
-        val borderStroke: Contract2.() -> BorderStroke? = { BorderStroke(this.cornerSize(), Color.Black) }
-        val original = factory!!.invoke(null, cornerSize, null, borderStroke) as Contract2
-        val copy = Contract2BinaryProbe.copyDefault(original)
-        val border = Contract2::class.java.getMethod("borderStroke").invoke(copy)
-        assertEquals(BorderStroke(20.dp, Color.Black), border)
+        assertEquals(BorderStroke(20.dp, Color.Black), copy.borderStroke())
     }
 
     @Test
