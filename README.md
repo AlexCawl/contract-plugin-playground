@@ -76,13 +76,13 @@ The screen should display `Contract 1` and `Contract 2` with the same rounded co
 and spacing clear of the system bars.
 
 Each contract test class has exactly two tests, `isDelegated` and `isRebinding`. Both copy a
-contract from 10 dp corners to 20 dp corners and check the dependent default shape and border
-callback. The assertions deliberately describe mutually exclusive behavior:
+contract from 10 dp corners to 20 dp corners and check the dependent default shape.
+The assertions deliberately describe mutually exclusive behavior:
 
 | Test | Contract1 | Contract2 |
 | --- | --- | --- |
-| `isDelegated` | Pass: shape and border use the original 10 dp corners. | Fail: shape uses the copied 20 dp corners. |
-| `isRebinding` | Fail: shape uses the original 10 dp corners. | Pass: shape and border use the copied 20 dp corners. |
+| `isDelegated` | Pass: shape uses the original 10 dp corners. | Fail: shape uses the copied 20 dp corners. |
+| `isRebinding` | Fail: shape uses the original 10 dp corners. | Pass: shape uses the copied 20 dp corners. |
 
 The four-test suite intentionally reports two failures. V1 callbacks execute in a headless
 Compose composition; Android tracing calls are no-ops in these local unit tests.
