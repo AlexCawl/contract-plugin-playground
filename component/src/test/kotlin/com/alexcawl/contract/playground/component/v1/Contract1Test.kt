@@ -14,9 +14,7 @@ import org.junit.Test
 class Contract1Test {
     @Test
     fun isDelegated() = inComposition {
-        val original = Contract1(
-            cornerSize = { 10.dp },
-        )
+        val original = Contract1(cornerSize = { 10.dp })
         val copy = remember(original) { original.copy(cornerSize = { 20.dp }) }
 
         assertEquals(20.dp, copy.cornerSize())
@@ -25,9 +23,7 @@ class Contract1Test {
 
     @Test
     fun isRebinding() = inComposition {
-        val original = Contract1(
-            cornerSize = { 10.dp },
-        )
+        val original = Contract1(cornerSize = { 10.dp })
         val copy = remember(original) { original.copy(cornerSize = { 20.dp }) }
 
         assertEquals(20.dp, copy.cornerSize())
